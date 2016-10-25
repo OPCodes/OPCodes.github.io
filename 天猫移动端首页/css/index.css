@@ -1,0 +1,962 @@
+/* 2016/6/10 */
+
+/* CSS Reset */
+html {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font: .6rem Helvetica,Arial,"微软雅黑";
+	height: 100%;
+	overflow: hidden;
+}
+
+h2 {
+	margin: 0;
+}
+
+input,
+button,
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+button {
+	-webkit-appearance: none;
+}
+
+input {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+em {
+	font-style: normal;
+}
+
+.clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* Reset End */
+
+/* Common */
+
+.title {
+	display: inline-block;
+	padding: 0 1.7rem ;
+	height: 1.55rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+.title .titName  {
+	position: relative;
+	display: block;
+	height: 1.55rem;
+	line-height: 1.55rem;
+	padding: 0 .55rem 0 1.5333rem;
+	background: #f0f0f0;
+	font-size: .66667rem;
+}
+
+.title .titName:before {
+	content: "";
+	position: absolute;
+	left: .5rem;
+	top: .45rem;
+	width: .75rem;
+	height: .75rem;
+	background-size: .75rem .75rem;
+}
+
+/* Common End */
+
+/* Content */
+
+#header {
+	position: absolute;
+	width: 100%;
+	height: 1.95rem;
+	padding-top: .25rem;
+	background: #f32d2d;
+	z-index: 10;
+}
+
+.menu {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 3.05rem;
+	height: 2.2rem;
+}
+
+.menu:after {
+	content: "";
+	position: absolute;
+	left: 1rem;
+	top: .55rem;
+	width: 1.033rem;
+	height: .867rem;
+	background: url("../img/indexIco.png") 0 -2.2333rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.form {
+	position: relative;
+	margin: 0 auto;
+	width: 11.9rem;
+	height: 1.65rem;
+	border-radius: .1rem;
+	background: #fee9e9;
+}
+
+.form .search {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 1.7rem;
+	height: 1.65rem;
+}
+
+.form .search:after {
+	content: "";
+	position: absolute;
+	top: .35rem;
+	left: .25rem;
+	width: .8333rem;
+	height: .8333rem;
+	background: url("../img/indexIco.png") -1.45rem -2.2333rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+
+}
+
+.form .text {
+	width: 9.65rem;
+	height: 1.65rem;
+	line-height: 1.5667rem;
+	padding-left: .55rem;
+	padding-right: 1.7rem;
+	font-size: .7rem;
+	font-family: "微软雅黑";
+	background: none;
+	color: #a28d8d;
+}
+
+.login {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 3.05rem;
+	height: 2.2rem;
+	line-height: 2.08rem;
+	text-align: center;
+	color: #fff;
+}
+
+
+#main {
+	width: 100%;
+	overflow: hidden;
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 8.7rem;
+}
+
+.banner .picBox {
+	height: 8.7rem;
+}
+
+.banner .picBox img {
+	width: 100%;
+}
+
+.banner .dotList {
+	position: absolute;
+	left: 0;
+	bottom: .35rem;
+	width: 100%;
+	font-size: 0;
+	text-align: center;
+}
+
+.banner .dotList .item {
+	display: inline-block;
+	margin: 0 .05rem;
+	width: .25rem;
+	height: .25rem;
+	border: .05rem solid rgba(0,0,0,0);
+	border-radius: 50%;
+	background: rgba(0,0,0,.5);
+}
+
+.banner .dotList .active {
+	border-color: #7f7f80; 
+	background: rgba(255,255,255,1);
+}
+
+.nav {
+
+}
+
+.nav .list {
+	border-bottom: .05rem solid #f0f0f0;
+	background: #fff;
+}
+
+.nav .list .item {
+	float: left;
+	width: 3.6rem;
+	padding-top: .2rem;
+	text-align: center;
+}
+
+.nav .list .pic {
+	width: 1.8rem;
+	height: 1.8rem;
+}
+
+.nav .list .tit {
+	display: block;
+	width: 100%;
+	height: .65rem;
+	margin-top: .2rem;
+	font: .56667rem/1 "微软雅黑";
+	color: #051b28;
+}
+
+.nav .tmHot {
+	position: relative;
+	padding: .5rem 0;
+	height: 2rem;
+}
+
+.nav .tmHotIco {
+	position: absolute;
+	left: 0;
+	top: .5rem;
+	width: 3.3rem;
+	height: 2rem;
+	border-right: .05rem solid #e7e7e7;
+}
+
+.nav .tmHotIco:after {
+	content: "";
+	position: absolute;
+	left: .36667rem;
+	top: .06667rem;
+	width: 2.6667rem;
+	height: 1.86667rem;
+	background: url("../img/indexIco.png") -11.9rem 0 no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.nav .tmHotCon {
+	overflow: hidden;
+	position: absolute;
+	top: .5rem;
+	right: 0;
+	width: 14.65rem;
+	height: 2rem;
+}
+
+.nav .tmHotCon .icoHorn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 2rem;
+	height: 2rem;
+}
+
+.nav .tmHotCon .icoHorn:after {
+	content: "";
+	position: absolute;
+	left: .6167rem;
+	top: .65rem;
+	width: .9rem;
+	height: .8rem;
+	background: url("../img/indexIco.png") -2.95rem -2.3rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.nav .tmHotCon ul {
+	position: absolute;
+	top: 0;
+	left: 2rem;
+	width: 11rem;
+}
+
+.nav .tmHotCon .items {
+	width: 100%;
+	height: 2rem;
+}
+
+.nav .items .top,
+.nav .items .bot {
+	display: block;
+	width: 100%;
+	height: 1rem;
+	font-size: .56667rem;
+	color: #000;
+}
+
+.nav .items .top {
+	font-weight: normal;
+}
+
+.nav .items .bot {
+	line-height: .6333rem;
+	color: #ff4b4b;
+}
+
+.wellSelected {
+
+}
+
+.wellSelected .pic img {
+	width: 100%;
+	height: 3.7rem;
+}
+
+.wellSelected .picList {
+	padding-left: .2rem;
+	background: #eb003d;
+}
+
+.wellSelected .picList .item {
+	float: left;
+	width: 4.25rem;
+	height: 5.45rem;
+	margin: 0 .2rem .2rem 0;
+}
+
+.wellSelected .picList .pic {
+	width: 4.25rem;
+	height: 5.45rem;
+}
+
+.flash-sale {
+	padding-top: .2333rem;
+	text-align: center;
+	background: #f0f0f0;
+}
+
+.flash-sale .liveBox {
+	float: left;
+	margin: 0 8px;
+	box-shadow: 0 0 .1rem #eee;
+}
+
+.flash-sale .liveBox img {
+	width: 8.6333rem;
+	height: 5.2167rem;
+}
+
+.flash-sale .titleSale {
+	display: inline-block;
+	padding: 0 1.7rem ;
+	height: 1.5rem;
+	font-weight: normal;
+	text-align: center;
+	background: url("../img/repeatX.png") 0 0 repeat-x;
+	background-size: .2rem 15.6rem;
+}
+
+.flash-sale .titleSale .titName {
+	position: relative;
+	display: block;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	padding: 0 .55rem 0 1.5333rem;
+	font-size: .66667rem;
+	background: #f0f0f0;
+	color: #ff2e2e;
+}
+
+.flash-sale .titleSale .titName:before {
+	content: "";
+	position: absolute;
+	left: .5rem;
+	top: .35rem;
+	width: .75rem;
+	height: .75rem;
+	background: url("../img/indexIco.png") -4.31667rem -2.3rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.flash-sale .comList {
+	background: #fff;
+}
+
+.flash-sale .comList .item {
+	float: left;
+	margin: 0 .3rem;
+	width: 3.9rem;
+}
+
+.flash-sale .comList .tit {
+	display: block;
+	width: 100%;
+	height: 1.1333rem;
+	line-height: 1.1333rem;
+	font-size: .63333rem;
+	color: #2f2f2f;
+}
+
+.flash-sale .comList .pic {
+	width: 3.9rem;
+	height: 4rem;
+}
+
+.flash-sale .comList .new {
+	display: block;
+	height: 1.41667rem;
+	line-height: 1.2667rem;
+	font-size: .5rem;
+	text-align: center;
+	color: #ff2e2e;
+}
+
+.flash-sale .comList .old {
+	margin-left: .1rem;
+	font-style: normal;
+	text-decoration: line-through;
+	color: #9b9b9b;
+}
+
+.fashion {
+	text-align: center;
+	background: #f0f0f0;
+}
+
+.fashion .title {
+	background: url("../img/repeatX.png") 0 -1.51667rem repeat-x;
+	background-size: .2rem 15.6rem;
+}
+
+.fashion .title .titName {
+	color: #e24aa5;
+}
+
+.fashion .title .titName:before {
+	background: url("../img/indexIco.png") -5.35rem -2.3rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.fashion .item {
+	float: left;
+	width: 3.9rem;
+	padding: .36667rem .3rem 0;
+	text-align: center;
+	background: #fff;
+}
+
+.fashion .item .mainTitle {
+	display: block;
+	height: .7666rem;
+	font: bold .6rem/.7666rem "微软雅黑";
+	color: #2f2f2f;
+}
+
+.fashion .item .subTitle {
+	display: block;
+	height: .7rem;
+	font: .53333rem/.7rem "微软雅黑";
+	color: #d355a2;
+}
+
+.fashion .item .pic {
+	width: 3.9rem;
+	height: 4.1667rem;
+}
+
+.fashion .ad img {
+	width: 100%;
+	height: 4.5rem;
+}
+
+.life {
+	text-align: center;
+	background: #f0f0f0;
+}
+
+.life .title {
+	background: url("../img/repeatX.png") 0 -3.08333rem repeat-x;
+	background-size: .2rem 15.6rem;
+}
+
+.life .title .titName {
+	color: #17b7ff;
+}
+
+.life .title .titName:before {
+	background: url("../img/indexIco.png") -6.4667rem -2.3rem no-repeat;
+}
+
+.life .picList .item {
+	float: left;
+	width: 4.5rem;
+}
+
+.life .picList .pic {
+	width: 4.5rem;
+	height: 6.75rem;
+}
+
+.trend {
+	text-align: center;
+	background: #f0f0f0;
+}
+
+.trend .title {
+	background: url("../img/repeatX.png") 0 -4.65rem repeat-x;
+	background-size: .2rem 15.6rem;
+}
+
+.trend .title .titName {
+	color: #4a84e2;
+}
+
+.trend .title .titName:before {
+	background: url("../img/indexIco.png") -7.58333rem -2.3rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.trend .item {
+	float: left;
+	width: 6rem;
+	height: 7.3rem;
+}
+
+.trend .item .pic {
+	width: 6rem;
+	height: 7.3rem;
+}
+
+.brand {
+	text-align: center;
+	background: #f0f0f0;
+}
+
+.brand .title {
+	background: url("../img/repeatX.png") 0 -6.21667rem repeat-x;
+	background-size: .2rem 15.6rem;
+}
+
+.brand .title .titName {
+	color: #019f8a;
+}
+
+.brand .title .titName:before {
+	background: url("../img/indexIco.png") -8.7167rem -2.3rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.brand .item {
+	float: left;
+	width: 6rem;
+	height: 8.4rem;
+}
+
+.brand .item .pic {
+	width: 6rem;
+	height: 8.4rem;
+}
+
+.internation {
+	text-align: center;
+	background: #f0f0f0;
+}
+
+.internation .title {
+	background: url("../img/repeatX.png") 0 -7.7833rem repeat-x;
+	background-size: .2rem 15.6rem;
+}
+
+.internation .title .titName {
+	color: #8829dd;
+}
+
+.internation .title .titName:before {
+	background: url("../img/indexIco.png") -9.8rem -2.3rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.internation .item {
+	float: left;
+	width: 6rem;
+	height: 7.1rem;
+}
+
+.internation .item .pic {
+	width: 6rem;
+	height: 7.1rem;
+}
+
+.specialSell {
+	text-align: center;
+	background: #f0f0f0;
+}
+
+.specialSell .title {
+	background: url("../img/repeatX.png") 0 -9.35rem repeat-x;
+	background-size: .2rem 15.6rem;
+}
+
+.specialSell .title .titName {
+	color: #ff8000;
+}
+
+.specialSell .title .titName:before {
+	background: url("../img/indexIco.png") -10.8333rem -2.3rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.specialSell .item {
+	float: left;
+	width: 9rem;
+	height: 5.3rem;
+}
+
+.specialSell .item .pic {
+	width: 9rem;
+	height: 5.3rem;
+}
+
+.specialSell .ad .pic {
+	width: 100%;
+	height: 4.46667rem;
+}
+
+.hot {
+	text-align: center;
+	background: #f0f0f0;
+}
+
+.hot .title {
+	background: url("../img/repeatX.png") 0 -10.91667rem repeat-x;
+	background-size: .2rem 15.6rem;
+}
+
+.hot .title .titName {
+	color: #7261e4;
+}
+
+.hot .title .titName:before {
+	background: url("../img/indexIco.png") -11.8833rem -2.3rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.hot .hotIndFir .item {
+	float: left;
+	width: 9rem;
+}
+
+.hotIndFir .item a {
+	display: block;
+	padding-top: .25rem;
+	width: 100%;
+	background: #fff;
+}
+
+.hotIndFir .item .le,
+.hotIndFir .item .ri {
+	float: left;
+	width: 4.5rem;
+	height: 4.8rem;
+	text-align: center;
+}
+
+.hotIndFir .item .tit {
+	display: block;
+	width: 4.5rem;
+	height: .8rem;
+	line-height: .8rem;
+	font-size: .63333rem;
+	color: #000;
+}
+
+.hotIndFir .item .rem {
+	display: block;
+	width: 4.5rem;
+	height: .7333rem;
+	line-height: .7333rem;
+	font-size: .63333rem;
+	color: #a5a5a5;
+}
+
+.hotIndFir .item .icoPic {
+	margin-top: .3rem;
+}
+
+.hotIndFir .item .pic {
+	width: 4.5rem;
+	height: 4.8rem;
+}
+
+.hot .hotInd .item {
+	float: left;
+	width: 4.5rem;
+}
+
+.hot .hotInd .wrap {
+	display: block;
+	width: 100%;
+	padding-top: .2rem;
+	text-align: center;
+	background: #fff;
+}
+
+.hot .hotInd .tit {
+	display: block;
+	height: .86667rem;
+	line-height: .866667rem;
+	font-size: .63333rem;
+	color: #000;
+}
+
+.hot .hotInd .rem {
+	display: block;
+	height: .66667rem;
+	line-height: .66667rem;
+	font-size: .566667rem;
+	color: #9b9b9b;
+}
+
+.trademark {
+	text-align: center;
+	background: #f0f0f0;
+}
+
+.trademark .title {
+	background: url("../img/repeatX.png") 0 -12.4833rem repeat-x;
+	background-size: .2rem 15.6rem;
+}
+
+.trademark .title .titName {
+	color: #303030;
+}
+
+.trademark .title .titName:before {
+	background: url("../img/indexIco.png") -13rem -2.3rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.trademark .item {
+	float: left;
+	margin: 0 0 .15rem .15rem;
+	background: #fff;
+}
+
+.trademark .item a {
+	display: block;
+	padding: .1rem;
+	width: 8.65rem;
+	height: 7.35rem;
+}
+
+.trademark .item .picWrap {
+	height: 5.85rem;
+}
+
+.trademark .picWrap .left {
+	float: left;
+	margin-right: .05rem;
+}
+
+.trademark .left .pic1 {
+	width: 5.75rem;
+	height: 5.75rem;
+}
+
+.trademark .picWrap .right {
+	float: right;
+	width: 2.85rem;
+}
+
+.trademark .right img {
+	width: 2.85rem;
+	height: 2.85rem;
+} 
+
+.trademark .right .pic2 {
+	margin-bottom: .05rem;
+}
+
+.trademark .content {
+	margin-top: .15rem;
+}
+
+.trademark .content .le {
+	float: left;
+	margin-right: .4rem;
+	padding: .06666rem 0 .083333rem;
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.trademark .content .ri {
+    float: right;
+	width: 7.05rem;
+	height: 1.35rem;
+	font-size: .56667rem;
+	text-align: left; 
+}
+
+.trademark .content .mainTit {
+	display: block;
+	color: #2f2f2f;
+}
+
+.trademark .content .subTit {
+	display: block;
+	margin-top: .2rem;
+	color: #9b9b9b;
+}
+
+
+.theme {
+	text-align: center;
+	background: #f0f0f0;
+}
+
+.theme .title {
+	background: url("../img/repeatX.png") 0 -14.05rem repeat-x;
+	background-size: .2rem 15.6rem;
+}
+
+.theme .title .titName {
+	color: #2f2f2f;
+}
+
+.theme .title .titName:before {
+	background: url("../img/indexIco.png") -14.1rem -2.3rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+}
+
+.theme .item {
+	float: left;
+	width: 4.5rem;
+}
+
+.theme .item a {
+	display: block;
+	padding: .3rem;
+	width: 3.9rem;
+	background: #fff;
+}
+
+.theme .item .mainTit {
+	display: block;
+	height: .7rem;
+	line-height: .7rem;
+	font-size: .63333rem;
+	color: #000;
+}
+
+.theme .item .subTit {
+	display: block;
+	margin-top: .1rem;
+	height: .7rem;
+	line-height: .7rem;
+	font-size: .5666rem;
+	color: #a5a5a5;
+}
+
+.theme .item .pic {
+	margin-top: .2rem;
+	width: 3.9rem;
+	height: 3.9rem;
+}
+
+.recom {
+	background: #f0f0f0;
+}
+
+.recom .wish {
+	height: 2.15rem;
+	line-height: 2.0333rem;
+	font-size: .6667rem;
+	text-align: center;
+	color: #999;
+}
+
+.recom .picWrap .item {
+	float: left;
+	margin: 0 .15rem .15rem 0;
+	width: 8.9rem;
+	background: #fff;
+	padding-bottom: .6rem;
+}
+
+.recom .picWrap li:nth-of-type(2n) {
+	margin-right: 0;
+}
+
+.recom .picWrap .pic {
+	width: 8.9rem;
+	height: 8.9rem;
+}
+
+.recom .picWrap .tit {
+	display: block;
+	margin-top: .3rem;
+	padding: 0 .4rem;
+	line-height: .8rem;
+	font-size: .63333rem;
+	color: #676767;
+}
+
+.recom .picWrap .price {
+    margin-top: .3rem;
+    padding: 0 .4rem;
+    font-size: .7rem;
+    color: #dd2727;
+}
+
+.recom .picWrap .mon {
+	margin-right: .1rem;
+}
+
+.recom .picWrap .zero {
+    font-size: .5rem;
+    color: #e14141;
+}
+
+#footer {
+	height: 2rem;
+	text-align: center;
+	background: #f0f0f0;
+}
+
+#footer .icoEnd {
+    display: inline-block;
+    margin-top: .5rem;
+    width: 1.5rem;
+	height: 1.05rem;
+	background: url("../img/indexIco.png") -14.7rem -.2rem no-repeat;
+	background-size: 16.2rem 3.1rem;
+    vertical-align: top;
+}

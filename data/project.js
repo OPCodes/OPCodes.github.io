@@ -15,7 +15,7 @@
 var projects = [
 		{
 			projectName:"腾讯微云",
-			projectWebsite:"http://2013.miaov.com/miaov_demo/diagnosite/",
+			projectWebsite:"腾讯微云/index.html",
 		    startTime:"2016.08.29",
 			endTime:"2016.09.06",
 			projectExplain:"该项目实现了新建文件夹、删除、重命名、刷新等功能模块，模拟数据进行动态渲染，渲染内容包括树形菜单、文件区域、以及路径导航三部分。充分练习了DOM元素的增删改查、事件的绑定、冒泡行为的处理、以及元素的框选、拖拽、单选、全选等小功能，同时利用自定义数据data，实现对于数据的实时同步。",
@@ -24,7 +24,7 @@ var projects = [
 		},
 		{
 			projectName:"移动端天猫商城首页",
-			projectWebsite:"http://v.miaov.com/thanks/",
+			projectWebsite:"天猫移动端首页/index.html",
 		    startTime:"2016.06.07",
 			endTime:"2016.06.13",
 			projectExplain:"利用meta标签对不同分辨率的设备进行适配，单位为rem，本项目使用自己封装的m.touch.js进行页面的动态操作，同时采用了弹性盒模型flex，怪异盒模型box-sizing：border-box",

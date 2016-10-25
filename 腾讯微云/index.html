@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>腾讯微云</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/wy.ico" />
+</head>
+<body>
+    <header id="header">
+        <div class="wrap clearFix">
+            <h1 class="main_logo fl">
+                <a href="#" class="logo_pic">
+                    <img src="img/title-logo.png" alt="">
+                </a>
+            </h1>
+            <div class="title_ad_box fl">
+                <a href="#">微云会员首次开通低至一元</a>
+            </div>
+            <div class="ri_login_box fr">
+                <div class="login_inner_box">
+                    <img src="img/g.jpg" class="user_img" alt="">
+                </div>
+            </div>
+            <div class="center_tip_box"></div>
+            <div class="ri_search_box fr">
+                <div class="search_inner_box">
+                    <i class="ico"></i>
+                    <label>搜索全部文件</label>
+                    <input type="text">
+                    <a href="#" class="close"></a>
+                </div>
+            </div>
+            <div class="download_vip_center fr">
+                <a href="#" class="vip_center_box"><i class="ico"></i>会员中心</a>
+                <a href="#" class="download_client_box"><i class="ico"></i>下载客户端</a>
+            </div>
+        </div>
+    </header>
+    <section id="sec">
+        <div class="left_sec_box">
+            <div class="upload_box">
+                <div class="inner_box">
+                    <input type="file" class="file_box">
+                </div>
+                <a href="#" class="btn g_btn">
+                    <span class="btn_inner">
+                        <i>+</i><span class="text">上传</span>
+                    </span>
+                </a>
+            </div>
+            <ul class="nav_box">
+                <li class="nav_list nav_current">
+                    <a href="#" class="link all">目录</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="link recent">最近</a>
+                </li>
+                <li class="nav_gap">
+                    <span class="gap"></span>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="link doc">文档</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="link pic">图片</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="link music">音乐</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="link vedio">视频</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="link note">笔记</a>
+                </li>
+                <li class="nav_gap">
+                    <span class="gap"></span>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="link clip">剪贴板</a>
+                </li>
+                <li class="nav_gap">
+                    <span class="gap"></span>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="link share">分享的链接</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="link recycle">回收站</a>
+                </li>
+            </ul>
+            <div class="left_bot_copy">
+                <a href="#">版权声明</a>
+                <span>|</span>
+                <a href="#">投诉指引</a>
+            </div>
+        </div>
+        <div class="right_sec_box">
+            <div class="oper_area_box clearFix">
+                <div class="le_area fl">
+                    <a href="javascript:;" class="g_btn l_btn1" id="downloadBtn"><i class="ico"></i>下载</a>
+                    <a href="javascript:;" class="g_btn l_btn2" id="shareBtn"><i class="ico"></i>分享</a>
+                    <a href="javascript:;" class="g_btn l_btn3" id="moveTo"><i class="ico"></i>移动到</a>
+                    <a href="javascript:;" class="g_btn l_btn4" id="renameBtn"><i class="ico"></i>重命名</a>
+                    <a href="javascript:;" class="g_btn l_btn5" id="deleteBtn"><i class="ico"></i>删除</a>
+                    <a href="javascript:;" class="g_btn l_btn6" id="createBtn"><i class="ico"></i>新建文件夹</a>
+                    <a href="javascript:;" class="g_btn l_btn7" id="refresh"><i class="ico"></i></a>
+                </div>
+                <div class="ri_area fr">
+                    <a href="javascript:;" class="g_btn r_btn1 active" id="showBoxBtn"><i class="ico"></i></a>
+                    <a href="javascript:;" class="g_btn r_btn2" id="sortStyleBtn"><i class="ico"></i></a>
+                </div>
+            </div>
+            <div class="content_area_box">
+                <div class="content_wrap">
+                    <div class="con_detail_menu">
+                        <div id="list_bar_nav" class="top_layer_box">
+                            <span class="checkall"></span>
+                            <div class="main_path">
+                                <span class="current"></span>
+                                <!-- <a href="javascript:;" class="path current" style="z-index: 2;">
+                                    <span>新建文件夹</span>
+                                </a> -->
+                            </div>
+                        </div>
+                        <div id="file_empty" class="g_empty sort_folder_empty">
+                            <div class="empty_box">
+                                <div class="ico"></div>
+                                <p class="title">暂无文件</p>
+                                <p class="content">请点击左上角的“上传”按钮添加</p>
+                            </div>
+                        </div>
+                        <div id="main_content" class="main_content clearFix">
+                        </div>
+                    </div>
+                </div>
+                <div class="con_sidebar tree_menu_wrap">
+                    <div class="item list_open">
+                        <div class="title_box list_selected" data-file-id="0">
+                            <a href="javascript:;" class="link">
+                                <span class="ellipsis text" title="微云">微云</span>
+                                <i class="ico"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="con_tree_menu menu_list">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="mask"></div>
+    
+    <div id="menu">
+        <p id="delectBtn">删除</p>
+        <p id="renameBtn">重命名</p>
+        <p id="moveBtn">移动到</p>
+    </div>
+
+    <div id="del_tip_box" class="alert_box">
+        <h3 class="alert_box_header">
+            <div class="inner">删除文件</div>
+        </h3>
+        <div class="alert_box_content del_content">
+            <div class="inner_wrap">
+                <div class="move_inner">
+                    <div class="move_in_file">
+                        <span class="file_img">
+                            <i class="ico_file"></i>
+                        </span>
+                        <span class="file_name">新建文件夹</span>
+                        <span class="file_num">123</span>
+                    </div>
+                    <div class="move_in_menu">
+                        <div class="move_to_path">
+                            <label>移动到：</label>
+                            <label class="detail_path"></label>
+                        </div>
+                        <div class="move_path_cont"></div>
+                    </div>
+                </div>
+                <div class="del_inner">
+                    <div class="del_inn_wrap">
+                        <i class="ico"></i>
+                        <h4 class="title">确定要删除这个文件夹吗？</h4>
+                        <p class="info">已删除的文件可以在回收站收到</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert_box_bot">
+            <span class="err"></span>
+            <a href="javascript:;" class="g_btn g_btn_blue">确定</a>
+            <a href="javascript:;" class="g_btn g_btn_gray">取消</a>
+        </div>
+        <a href="javascript:;" class="alert_box_close"></a>
+    </div>
+
+     <!--<div class="drag-helper ui-draggable-dragging" >
+        <div class="icons">
+            <i class="icon icon0 filetype icon-folder"></i>           
+            <i class="icon icon1 filetype icon-folder"></i>       
+            <i class="icon icon2 filetype icon-folder"></i>      
+            <i class="icon icon3 filetype icon-folder"></i>   
+        </div>
+        <span class="sum">1</span>
+    </div>-->
+    
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/dataHandle.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/MTween.js"></script>
+</body>
+</html>
+    
