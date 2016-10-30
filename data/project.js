@@ -33,7 +33,7 @@ var projects = [
 		},
 		{
 			projectName:"百度浏览器",
-			projectWebsite:"http://v.miaov.com/thanks/",
+			projectWebsite:"百度浏览器/index.html",
 		    startTime:"2016.10.22",
 			endTime:"至今",
 			projectExplain:"本项目仿百度浏览器主页，利用JQuery以及CSS3中的transform和animation实现了动画，以及解决了每一块切换的效果，关键在于鼠标滚轮滚动的过程中如何定位当前处于哪一屏，类似于全屏切换效果。",

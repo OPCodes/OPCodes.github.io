@@ -1,0 +1,211 @@
+    /* Reset CSS
+         * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    outline: none;
+    text-decoration:none;
+    color: #333;
+}
+img {
+    border: none;
+    vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    color:#444;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body {
+    font: 16px/1 STHeiti, "Microsoft yahei", Helvetica, Verdana, sans-serif;;
+    color: #000;
+    background: #fff;
+ }
+html,body {
+    overflow: hidden;
+ }
+html,body,#container,#content {
+    width: 100%;
+    height: 100%;
+}
+#container {
+    position: relative;
+    min-width: 600px;
+    min-height: 580px;
+}
+@media screen and (max-width: 640px) {
+    html,body {
+        overflow-x: auto;
+    }
+}
+@media screen and (max-height: 580px) {
+     html,body {
+        overflow-y: auto;
+     }
+ }
+#header,#footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+} 
+/* Header
+ * --------------------------------------- */
+#header {
+    top: 0;
+}
+#header .header-inner {
+    padding: 22px 30px 0;
+    overflow: hidden;
+}
+.header-inner .page-title {
+    float: left;
+    width: 126px;
+    height: 26px;
+    overflow: hidden;
+    background:#fff url("../images/home_z_43364a9.png") no-repeat;
+    background-position: 0 0;
+    text-indent: -999px;
+}
+.header-inner a {
+    float: right;
+    height: 20px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.header-inner span {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background:#fff url("../images/home_z_43364a9.png") no-repeat;
+}
+.header-inner .download-all-icon {
+    background-position: -106px -29px;
+}
+.header-inner .linkTo80 {
+    margin-right: 30px;
+}
+.linkTo80 .link-icon {
+    background-position: -106px -52px;
+}
+
+/* Content
+ * --------------------------------------- */
+#content {
+    position: relative;
+    z-index: 0;
+}
+#slidebar {
+    width: 39px;
+    height: 135px;
+    margin-top: -67.5px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    z-index: 1;
+}
+
+#slidebar li {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    padding: 10px 16px;
+}
+#slidebar li a {
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 3px;
+    background: #b2b2b2;
+    cursor: pointer;
+}
+#slidebar .slide-active a {
+    width: 39px;
+    height: 19px;
+    margin: -6px 0 0 -16px;
+    border-radius: 9px;
+}
+#slidebar .slidebar-text {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+}
+#slidebar .slide-active .slidebar-text {
+    opacity: 1;
+}
+
+
+/* Footer
+ * --------------------------------------- */
+#footer {    
+    bottom: 0;
+    background: #4c4c4c;
+}
+#nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#nav li {
+    float: left;
+    position: relative;
+    width: 12.4%;
+}
+#nav li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    color: #b2b2b2;
+}
+#nav li a:hover,
+#nav .nav-home a {
+    color: #fff;
+}
+#nav .nav-fresh-icon {
+    width: 28px;
+    height: 13px;
+    margin-left: 32px;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    background-image: url("../images/home_z_43364a9.png");
+    background-position: -98px -75px;
+    background-repeat: no-repeat;
+}
+#footer .under-line {
+    position: absolute;
+    overflow: hidden;
+    left: 40px;
+    top: 37px;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+}
