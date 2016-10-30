@@ -29,7 +29,9 @@ var userInfo = {
     userPhone: 18810983630,
     userOrignPlace:  "山西省忻州市" ,
     userSeatPlace:  "北京市",
-    userGithub: "OPCodes",   
+    userGithub: "OPCodes", 
+    jobWant: "前端工程师",
+    userExperience: "2年", 
     userLearning: ["ecmascript 6","react.js","Node.js","Vue.js"],
     userHobby: ["运动","游戏","电影"],
     userAssessment: "扎实的JS基础，善于专研新技术，喜欢挑战，有上进心，有比较好的协作和沟通能力，具有良好的英语能力和数学基础。"
