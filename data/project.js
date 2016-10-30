@@ -24,8 +24,8 @@ var projects = [
 		projectThumbnail:"images/icon/tmall.gif"
 	},
 	{
-		projectName:"JQuery官网",
-		projectWebsite:"JQuery/index.html",
+		projectName:"JQuery官网首页",
+		projectWebsite:"jQuery/index.html",
 	    startTime:"2016.7.22",
 		endTime:"2016.7.27",
 		projectExplain:"本项目仿JQuery官网首页，采用了响应式布局的写法，利用了CSS3中media媒体查询，根据分辨率的大小，来调整页面中元素的大小，以及结构布局的转换，以便于提高不同设备下用户的体验，同时将一些图标做成字体，避免了图片模糊的效果。",
