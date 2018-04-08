@@ -194,7 +194,7 @@
 			a = s.$string,
 			r = t.images,
 			o = t.icon,
-			l = t.intro_03,
+			// l = t.intro_03,
 			c = s.$each,
 			u = (t.$value, t.$index, "");
 		return u += '<div class="hea_intro"> <div class="high_light">  <div class="header"> <div class="hea_con"> <div class="hea_left"> ', n.userName && (u += " <h3>", u += a(n.userName), u += "</h3> "), u += " ", n.jobWant && (u += " <p>", u += a(n.jobWant), u += "</p> "), u += ' </div> <div class="hea_right"> ', n.userQQ && (u += ' <div class="hea_qq">', u += a(n.userQQ), u += "</div> "), u += " ", n.userEmail && (u += ' <div class="hea_mail">', u += a(n.userEmail), u += "</div> "), u += ' </div> </div> </div>  <div class="intro clearfix" id="intro"> <div class="intro_con clearfix"> <table class="intro_table" id="intro_table"> <tr> <td> <div class="intro_left"> ', n.motto && (u += " <p> ", u += a(n.motto), u += " <span></span> </p> "), u += ' </div> </td> </tr> </table> <div class="intro_right"> <div class="pic"> <img src="', u += a(n.userPortrait || r / o / l.png), u += '" /> </div> <div class="intro_detail"> <ul> ', c(n.newUserInfo, function(t, e) {
