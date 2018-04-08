@@ -36,11 +36,11 @@ var timeAxisArr = [
 			jobContent:"包括：根据UI设计图，专题页静态页面的编写，以及利用jQuery和js完成了一些动态效果，其中包括导航的跳转，侧边框的显示隐藏，侧边框回到顶部功能，以及滑过变色等效果。",
 		},
 		{
-		    startTime:"2016.04.27",
-			endTime:"2016.10.27",
-			companyNam:"妙味课堂",
-			companyLogo:'images/icon/expre_logo4.png',
-			companyWebsite:"http://www.miaov.com",
+		    startTime:"2016.11.09",
+			endTime:"2018.02.24",
+			companyNam:"一起作业网",
+			companyLogo:'images/icon/17zuoye.png',
+			companyWebsite:"http://www.17zuoye.com",
 			jobContent:"内容包括：从WEB前端开发零基础到、移动端页面的开发、再到原生JAVASCRIPT、Ajax等内容，以上技术比较熟练，还学习了一些类库，如JQuery，还学习到了版本控制工具git和svn、了解到了一些类库和框架如Vue.js、react.js、Node.js等",
 		}
 ]
