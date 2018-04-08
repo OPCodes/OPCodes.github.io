@@ -1,0 +1,164 @@
+@w: 100%;
+@h1: 30px;
+@bg: #f1f1f1;
+
+/* 2016/6/22 by wwx */
+
+/* CSS Reset */
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+    border: none;
+}
+
+/* Reset End */
+
+/* Common */ 
+
+body {
+    font: 12px/1.5 Arial,"宋体";
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+.wrap {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.tri {
+    width: 11px;
+    height: 6px;
+    background: url("../img/headArr.png") no-repeat;
+    transform: rotate(0deg);
+    transform-origin: 5px 3px;
+    transition: .2s;
+}
+
+/* Common End */
+
+/* Header */
+#header {
+   width: @w;
+   height: @h1;
+   background: @bg; 
+}
+
+.province_areas {
+    float: left;
+    position: relative;
+    height: 30px;
+    width: 120px;
+}
+
+.province_areas .address_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 24px 0 9px;
+    height: 30px;
+    line-height: 30px;
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #f1f1f1;
+    color: #666;
+    background: #f1f1f1;
+}
+
+.province_areas .address_box:hover {
+    border-color: #ddd;
+    background: #fff;
+}
+.province_areas .address_box:hover .hd_arr {
+    transform: rotate(180deg);
+}
+
+.province_areas .hd_arr {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+
+.province_areas .pro_list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    padding: 12px 1px 8px 10px;
+    width: 311px;
+    border: 1px solid #ddd;
+}
+
+.province_areas .pro_list li {
+    float: left;
+    width: 60px;
+    margin-bottom: 4px;;
+}
+
+.province_areas .pro_list a {
+    display: inline-block;
+    padding: 0 8px;
+    color: #666;
+    background: #fff;
+}
+.province_areas .pro_list a:hover {
+    background: #f4f4f4;
+}
+.province_areas .pro_list .active,
+.province_areas .pro_list .active:hover {
+    color: #fff;
+    background: #c81623;
+}
+
+.reg_login {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+}
+
+.reg_login a {
+    display: block;
+    float: left;
+}
+
+.reg_login .login_box {
+    margin-right: 6px;
+    color: #666;
+}
+
+.reg_login .reg_box,
+.reg_login a:hover {
+    color: #c81623;
+}
+
+/* Header End */
