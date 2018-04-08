@@ -1,0 +1,304 @@
+/* Common */
+
+.wrap {
+	width: 1200px;
+}
+
+/* Common End */
+
+/* Header */
+
+#header {
+	height: 64px;
+	line-height: 66px;
+}
+
+#header .navList .oMapDownList,
+#header .navList .dCenDownList {
+	display: none;
+}
+
+#header .list2:hover .oMapDownList,
+#header .list3:hover .dCenDownList {
+	display: block;
+}
+
+#header .navList li.active {
+	background: #2b2d34;
+}
+
+/* Header End */
+
+/* SupportCenter */
+
+#supportCenter {
+	height: 320px;
+	background: #273e4e url("../img/supportCenter.jpg") center center no-repeat;
+}
+
+#supportCenter .wrap {
+	padding: 0 15px 0 20px;
+	width: 1165px;
+}
+
+#supportCenter .leftWrap {
+	float: left;
+	width: 550px;
+	padding-top: 23px;
+}
+
+#supportCenter .leftWrap .supTitle {
+	height: 99px;
+	line-height: 96px;
+	font-size: 42px;
+	font-weight: normal;
+	color: #fff;
+}
+
+#supportCenter .leftWrap .supCont {
+	line-height: 28px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #a9b2b8;
+}
+
+#supportCenter .leftWrap .askBtns {
+	margin-top: 55px;
+}
+
+.leftWrap .askBtns a {
+	font-size: 14px;
+}
+
+.leftWrap .askBtns .askQue,
+.leftWrap .askBtns .myQue {
+	float: left;
+	height: 30px;
+	line-height: 32px;
+	padding: 0 20px;
+	border: 1px solid #0687cb;
+}
+
+.leftWrap .askBtns .askQue {
+	margin-right: 12px;
+	background: #0687cb;
+}
+
+.leftWrap .askBtns .myQue {
+	color: #0687cb;
+}
+
+.leftWrap .askBtns .askQue:hover {
+	text-decoration: underline;
+	background: #0b78b1;
+	color: #d3d8db;
+}
+
+.leftWrap .askBtns .myQue:hover {
+	text-decoration: underline;
+	color: #0b78b1;
+}
+
+#supportCenter .rightWrap {
+	float: right;
+	width: 296px;
+	padding-top: 142px;
+}
+
+.rightWrap .search {
+	position: relative;
+	margin-right: 18px;
+	width: 278px;
+	height: 32px;
+}
+
+.rightWrap .search input {
+	padding: 0 10px;
+	width: 258px;
+	height: 32px;
+	line-height: 32px;
+	background: #6c8395;
+	color: rgba(255,255,255,.2);
+}
+
+.rightWrap .search input:focus {
+	background: #fff;
+	color: rgba(0, 0, 0,.2);;
+}
+
+.rightWrap .search .icoSear {
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	width: 18px;
+	height: 18px;
+	background: url("../img/index.png") -275px -210px no-repeat;
+}
+
+.rightWrap .kw {
+	height: 36px;
+	line-height: 36px;
+	color: #fff;
+}
+
+.rightWrap .kw dt,
+.rightWrap .kw dd {
+	float: left;
+}
+
+.rightWrap .kw dt {
+	color: #c1c9d2;
+}
+
+.rightWrap .kw dd {
+	margin-right: 8px;
+}
+
+.rightWrap .kw dd a {
+	color: #fff;
+}
+
+.rightWrap .kw dd a:hover {
+	text-decoration: underline;
+}
+
+/* SupportCenter End */
+
+/* Content */
+
+#content {
+	height: 491px;
+}
+
+#content .wrap {
+	padding: 45px 0;
+}
+
+#content .leContainer {
+	float: left;
+	margin: 0 20px;
+	width: 740px;
+}
+
+#content .leContainer .hotProTit,
+#content .riContainer .newNoticeTit {
+	height: 38px;
+	line-height: 38px;
+	font-size: 22px;
+}
+
+#content .leContainer .hotProTit {
+	border-bottom: 2px solid #0687cb;
+}
+
+#content .leContainer .textList {
+	
+}
+
+#content .leContainer .captionList {
+	height: 49px;
+	border-bottom: 1px solid #ddd;
+}
+
+.leContainer .captionList .item {
+	float: left;
+	position: relative;
+}
+
+.leContainer .captionList a {
+	display: block;
+	padding: 0 15px;
+	height: 49px;
+	line-height: 50px;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+	color: #333;
+}
+
+.leContainer .captionList a.active {
+	border-bottom-color: #0687cb; 
+	color: #0687cb;
+}
+
+.leContainer .list .txt,
+.riContainer .list .txt  {
+	float: left;
+	width: 620px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#content .textList .list {
+	padding: 15px 0;
+	height: 18px;
+	line-height: 18px;
+	border-bottom: 1px solid #f7f7f7;
+	font-size: 14px;
+}
+
+#content .textList a {
+	display: block;
+	width: 100%;
+	color: #666;
+}
+
+#content .textList .date {
+	float: right;
+	font-size: 12px;
+	background: none;
+	color: #999;
+}
+
+#content .textList a:hover,
+#content .textList .date:hover {
+	color: #0687cb;
+}
+
+
+#content .contentWrap .more {
+	margin-top: 20px;
+	display: block;
+	height: 14px;
+	line-height: 14px;
+	font-size: 14px;
+	color: #666;
+}
+
+#content .contentWrap .more:hover {
+	text-decoration: underline;
+	color: #0687cb;
+}
+
+#content .riContainer {
+	float: right;
+	margin: 0 20px;
+	width: 380px;
+}
+
+#content .riContainer .newNoticeTit {
+	border-bottom: 2px solid #3d4751;
+}
+
+.riContainer .list .txt {
+	width: 285px;
+}
+
+/* Content End */
+
+/* Footer */
+
+#footer {
+	padding-top: 44px;
+	height: 156px;
+}
+
+#footer .wrap {
+	width: 1170px;
+}
+
+#footer .rel-links a:hover {
+	text-decoration: underline;
+}
+
+/* Footer End */

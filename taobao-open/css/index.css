@@ -1,0 +1,756 @@
+/* 2016/5/27 by wwx */
+
+/* Header */
+
+#header .navList .oMapDownList,
+#header .navList .dCenDownList {
+	display: none;
+}
+
+#header .list2:hover .oMapDownList,
+#header .list3:hover .dCenDownList {
+	display: block;
+}
+
+/* Header End */
+
+/* Banner */
+
+#banner {
+	height: 517px;
+}
+
+#banner .banWrap {
+	position: relative;
+	overflow: hidden;
+	background: #0a091e;
+}
+
+.banWrap .picList {
+	position: relative;
+	width: 100%;
+	height: 467px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.banWrap .picList .item {
+	float: left;
+	width: 100%;
+}
+
+.picList .item a {
+	display: block;
+	height: 467px;
+}
+
+.picList .item .pic1 {
+	background: url("../img/banner1.jpg") center center no-repeat;
+}
+
+.picList .item .pic2 {
+	background: url("../img/banner2.png") center center no-repeat;
+}
+
+.picList .item .pic3 {
+	background: url("../img/banner3.png") center center no-repeat;
+}
+
+#banner .dotList {
+	position: absolute;
+	bottom: 24px;
+	width: 100%;
+	text-align: center;
+}
+
+#banner .dotList .item {
+	display: inline-block;
+	margin: 0 3px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+#banner .dotList .active {
+	background: #fff;
+}
+
+#banner .banBot {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.banBot .wrap {
+	height: 50px;
+	width: 1118px;
+}
+
+.banBot .wrap a:hover {
+	text-decoration: underline;
+}
+
+.banBot .banBotLeft {
+	position: relative;
+	float: left;
+	padding-left: 35px;
+}
+
+.banBot .banBotLeft:before {
+	content:"";
+	position: absolute;
+	left: 0;
+	top: 16px;
+	width: 20px;
+	height: 15px;
+	background: url("../img/index.png") -150px 0 no-repeat;
+}
+
+.banBot .banBotLeft a {
+	display: block;
+	position: relative;
+	float: left;
+	margin-right: 24px;
+	padding-right: 23px;
+	height: 49px;
+	line-height: 48px;
+	width: 159px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666;
+}
+
+.banBot .banBotLeft a:after {
+	content:"";
+	position: absolute;
+	right: 0;
+	top: 20px;
+	width: 23px;
+	height: 9px;
+	background: url("../img/index.png") -272px -1px no-repeat;
+}
+
+.banBot .banBotRight {
+	float: right;
+	padding-right: 21px;
+	color: #5eb5fe;
+}
+
+.banBot .banBotRight:hover {
+	text-decoration: underline;
+}
+/* Banner End */
+
+/* Business */
+
+#business {
+	height: 379px;
+}
+
+#business .wrap {
+	width: 1080px;
+	padding: 20px 19px 67px;
+}
+
+.busiList .detailBusi {
+	display: inline;
+	float: left;
+	padding-top: 17px;
+	margin: 0 35px;
+	width: 200px;
+	height: 233px;
+	text-align: center;
+}
+
+.busiList .detailBusi a {
+	color: #444;
+}
+
+.busiList .detailBusi img {
+	width: 135px;
+	height: 85px;
+}
+
+.busiList .detailBusi a:hover {
+	color: #5eb5fe;
+}
+
+.busiList .detailBusi .title {
+	height: 32px;
+	font: normal 20px/32px "微软雅黑";
+}
+
+.busiList .detailBusi .busiInfo {
+	margin-top: 11px;
+	line-height: 24px;
+}
+
+.newBusi {
+	padding: 11px 0; 
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.newBusi a {
+	position: relative;
+	padding-left: 36px;
+	color: #333;
+}
+
+.newBusi .first:before,
+.newBusi .second:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: -2px;
+	height: 20px;
+	width: 36px;
+}
+
+.newBusi .first:before {
+	background: url("../img/index.png") -183px 0 no-repeat;
+}
+
+.newBusi .second:before {
+	background: url("../img/index.png") -233px 0 no-repeat;
+}
+
+/* Business End */
+
+/* Goodness */
+
+#goodness {
+	padding-top: 18px;
+	height: 502px;
+	background: url("../img/goodnessBg.jpg") no-repeat;
+	background-size: cover;
+}
+
+#goodness .gTitle {
+	position: relative;
+	height: 72px;
+	padding-left: 29px;
+	font: normal 22px/72px "微软雅黑";
+	color: #fff;
+}
+
+#goodness .gTitle:before {
+	content: "";
+	position: absolute;
+	left: 1px;
+	top: 25px;
+	width: 24px;
+	height: 22px;
+	background: url("../img/index.png") 0 -38px no-repeat;
+}
+
+#goodness .navBox {
+	width: 510px;
+	margin: 0 auto;
+}
+
+.navBox .item {
+	margin: 0 35px;
+	float: left;
+}
+
+.navBox .item .aWrap {
+	display: block;
+	position: relative;
+	width: 100px;
+	height: 114px;
+}
+
+.navBox .aWrap span {
+	position: absolute;
+	left: 27px;
+	top: 22px;
+	width: 43px;
+	height: 43px;
+	border: 1px solid #acafb4;
+	border-radius: 50%;
+}
+
+.navBox .aWrap .circleFir {
+	background: url("../img/index.png") -23px -28px no-repeat;
+}
+
+.navBox .active .circleFir,
+.navBox .aWrap:hover .circleFir {
+	background: url("../img/index.png") -70px -28px no-repeat;
+}
+
+.navBox .aWrap .circleSec {
+	background: url("../img/index.png") -114px -28px no-repeat;
+}
+
+.navBox .active .circleSec,
+.navBox .aWrap:hover .circleSec {
+	background: url("../img/index.png") -159px -28px no-repeat;
+}
+
+.navBox .aWrap .circleThi {
+	background: url("../img/index.png") -204px -28px no-repeat;
+}
+
+.navBox .active .circleThi,
+.navBox .aWrap:hover .circleThi {
+	background: url("../img/index.png") -249px -28px no-repeat;
+}
+
+.navBox .aWrap .tit {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100px;
+	height: 36px;
+	line-height: 42px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.navBox .active .tit,
+.navBox .aWrap:hover .tit {
+	background: url("../img/index.png") -220px -248px no-repeat;
+}
+
+#goodness .gBotWrap {
+	position: relative;
+	margin-top: 50px;
+}
+
+.gBotWrap .textCon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 32px 20px 0 100px;
+}
+
+.gBotWrap .textCon p {
+	position: relative;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 11px;
+	font-size: 13px;
+	color: #fff;
+}
+
+.gBotWrap .textCon span {
+	position: absolute;
+	top: 16px;
+	left: 0;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.gBotWrap .picWrap {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 18px;
+	width: 504px;
+	height: 266px;
+}
+
+.gBotWrap .picWrap img {
+	max-height: 220px;
+}
+
+/* Goodness End */
+
+/* Technie */
+
+#technic {
+	padding-top: 38px;
+	height: 571px;
+}
+
+#technic .tecTitle {
+	position: relative;
+	padding-left: 29px;
+	height: 72px;
+	font: normal 22px/72px "微软雅黑";
+	color: #333;
+}
+
+#technic .tecTitle:before {
+	content: "";
+	position: absolute;
+	left: 1px;
+	top: 25px;
+	width: 22px;
+	height: 22px;
+	background: url("../img/index.png") -220px -290px no-repeat;
+}
+
+#technic .tecText {
+	padding: 0 100px;
+	margin-top: 20px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	text-align: center;
+}
+
+#technic .tecContent {
+	margin-top: 27px;
+	padding: 0 214px 0 176px;
+	height: 406px;
+}
+
+.tecContent .conBox {
+	float: left;
+	padding-top: 30px;
+	margin-right: 10px;
+	width: 140px;
+	height: 140px;
+	background: url("../img/ico-tecContent.png") no-repeat;
+}
+
+.tecContent .conBox:hover {
+	background: url("../img/ico-tecContent.png") 0 -378px;
+	cursor: pointer;
+}
+
+.tecContent .conSix {
+	margin: -40px 10px 0 74px; 
+}
+
+.tecContent .conSev {
+	margin: -40px 10px 0 0; 
+}
+
+.tecContent .conEig {
+	margin: -40px 10px 0 0; 
+}
+
+.tecContent .conBox a {
+	display: block;
+}
+
+.tecContent .conBox .step1 {
+	display: block;
+	padding-top: 18px;
+	width: 140px;
+	height: 100px;
+	text-align: center;
+}
+
+.tecContent .step1 b {
+	display: block;
+	width: 56px;
+	height: 52px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+	font: normal 48px/52px "宋体";
+	color: #ccc;
+}
+
+.tecContent .step1 span {
+	display: block;
+	width: 56px;
+	margin: 4px auto 0;
+	font: 12px/18px "微软雅黑";
+	color: #28a3ef;
+}
+
+.tecContent .step2 {
+	display: none;
+	padding: 41px 10px 0;
+	line-height: 17px;
+	font-size: 12px;
+	text-align: center;
+	color: #fff; 
+}
+
+.tecContent .conBox:hover .step1 {
+	display: none;
+}
+
+.tecContent .conBox:hover .step2 {
+	display: block;
+}
+
+/* Technic End */
+
+/* Clouds */
+
+#clouds {
+	height: 493px;
+}
+
+.cloudsTitle {
+	position: relative;
+	height: 72px;
+	padding-left: 39px;
+	font: normal 22px/70px "微软雅黑";
+}
+
+.cloudsTitle:before {
+	content: "";
+	position: absolute;
+	left: 3px;
+	top: 22px;
+	width: 28px;
+	height: 22px;
+	background: url("../img/index.png") -220px -320px no-repeat;
+}
+
+.cloudWrap {
+	position: relative;
+	height: 420px;
+}
+
+.cloudWrap .leftWrap,
+.cloudWrap .rightWrap {
+	position: absolute;
+	top: 0;
+	width: 555px;
+	height: 420px;
+}
+
+
+.cloudWrap .leftWrap {
+	left: 0;
+	background: url("../img/cloudsLeft.gif") no-repeat;
+	background-size: cover;
+}
+
+.cloudWrap .rightWrap {
+	right: 0;
+	background: url("../img/cloudsRight.gif") no-repeat;
+	background-size: cover;
+}
+
+.cloudWrap .leftWrap .caption,
+.cloudWrap .rightWrap .caption {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding-top: 156px;
+	width: 100%;
+	height: 265px;
+} 
+
+.cloudWrap .caption .cTitle,
+.cloudWrap .caption .cPara {
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+}
+
+.cloudWrap .caption .cTitle {
+	height: 56px;
+	font: normal 34px/56px "宋体";
+}
+
+.cloudWrap .cTitle span {
+   font-size: 16px;
+}
+
+.cloudWrap .caption .cPara {
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+}
+
+.cloudWrap .leftWrap .content,
+.cloudWrap .rightWrap .content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 42px 19px 0;
+	height: 378px;
+	width: 517px;
+}
+
+.cloudWrap .content .item {
+	position: relative;
+	padding-left: 51px;
+	height: 44px;
+	margin-bottom: 29px;
+}
+
+.cloudWrap .item h4,
+.cloudWrap .item p {
+	height: 22px;
+}
+
+.cloudWrap .item h4 {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 22px;
+	color: #36a2f6;
+}
+
+.cloudWrap .item p {
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 20px;
+	color: #fff;
+}
+
+.cloudWrap .content .knowMore {
+	position: absolute;
+	left: 159px;
+	bottom: 33px;
+	width: 144px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	border: 1px solid #3199f4;
+	border-radius: 4px;
+	text-align: center;
+	background: rgba(80,133,177,.8);
+	color: #fff;
+}
+
+.cloudWrap .content .knowMore:hover {
+	background: rgba(23,133,240,.8);
+}
+
+.cloudWrap .item:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 2px;
+	width: 36px;
+	height: 36px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+.leftWrap .item1:before {
+	background: url("../img/index.png") 2px -72px no-repeat;
+}
+
+.leftWrap .item2:before {
+	background: url("../img/index.png") -35px -72px no-repeat;
+}
+
+.leftWrap .item3:before {
+	background: url("../img/index.png") -75px -70px no-repeat;
+}
+
+.leftWrap .item4:before {
+	background: url("../img/index.png") -108px -70px no-repeat;
+}
+
+.rightWrap .item1:before {
+	background: url("../img/index.png") -144px -70px no-repeat;
+}
+
+.rightWrap .item2:before {
+	background: url("../img/index.png") -178px -70px no-repeat;
+}
+
+.rightWrap .item3:before {
+	background: url("../img/index.png") -216px -70px no-repeat;
+}
+
+.rightWrap .item4:before {
+	background: url("../img/index.png") -253px -72px no-repeat;
+}
+
+
+/* Clouds End */
+
+/* Partners */
+
+#partners {
+	margin-top: 90px;
+	padding-top: 16px;
+	height: 231px;
+	background: url("../img/partnerBg.png") repeat;
+}
+
+.partnersTitle {
+	position: relative;
+	height: 74px;
+	padding-left: 39px;
+	font: normal 22px/74px "微软雅黑";
+}
+
+.partnersTitle:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 24px;
+	width: 35px;
+	height: 25px;
+	background: url("../img/index.png") -288px -78px no-repeat;
+}
+
+.partnersList {
+	margin-right: -31px;
+	padding-top: 19px;
+}
+
+.partnersList li {
+	float: left;
+	display: inline;
+	margin-right: 31px;
+}
+
+.partnersList .list a {
+	display:block;
+	width: 164px;
+	height: 83px;
+	background: url("../img/partners.png") no-repeat;
+}
+
+.partnersList .list1 a {
+	background-position: 0 0;
+}
+
+.partnersList .list1 a:hover {
+	background-position: -164px 0;
+}
+
+.partnersList .list2 a {
+	background-position: -328px 0;
+}
+
+.partnersList .list2 a:hover {
+	background-position: -492px 0;
+}
+
+.partnersList .list3 a {
+	background-position: -656px 0;
+}
+
+.partnersList .list3 a:hover {
+	background-position: -820px 0;
+}
+
+.partnersList .list4 a {
+	background-position: 0 -83px;
+}
+
+.partnersList .list4 a:hover {
+	background-position: -164px -83px;
+}
+
+.partnersList .list5 a {
+	background-position: -328px -83px;
+}
+
+.partnersList .list5 a:hover {
+	background-position: -492px -83px;
+}
+
+.partnersList .list6 a {
+	background-position: -656px -83px;
+}
+
+.partnersList .list6 a:hover {
+	background-position: -820px -83px;
+}
+
+/* Eartners End */

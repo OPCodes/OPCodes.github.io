@@ -1,0 +1,1276 @@
+/* 2016/5/21 by wwx */
+
+/* CSS Reset */
+body {
+	margin: 0;
+	font: 12px Arial, Helvetica, sans-serif;
+	min-width: 980px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dd {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+img {
+	border: none;
+	vertical-align: top;
+}
+
+strong {
+	font-weight: normal;
+}
+
+em {
+	font-style: normal;
+}
+
+form {
+	border: 1px solid #000;
+	margin: 0;
+}
+
+input {
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.clearFix {
+	zoom: 1;
+}
+
+.clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* Reset End */
+
+
+/* Common Style */
+
+.wrap {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.redTri {
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	margin-left: -7px;
+	width: 14px;
+	height: 8px;
+	z-index: 2;
+	background: url("../img/index-ico.png") -184px -23px no-repeat;
+}
+
+/* Common End */
+
+
+/* Header */
+
+#header {
+	background: url("../img/reXBg.png") repeat-x;
+}
+
+#header .wrap {
+	position: relative;
+	height: 70px;
+}
+
+#header .logo {
+	position: relative;
+	float: left;
+	padding-right: 15px;
+	height: 70px;
+}
+
+#header .logo a {
+	display: block;
+	width: 158px;
+	height: 0px;
+	padding-top: 70px;
+	line-height: 70px;
+	font-size: 22px;
+	text-indent: 38px;
+	color: #e4e3e3;
+	background: url("../img/index-ico.png") 0 -66px no-repeat;
+	overflow: hidden;
+}
+
+#header .hdList {
+	position: relative;
+	float: left;
+	height: 70px;
+}
+
+#header .hdList .list {
+	float: left;
+	position: relative;
+	margin-right: -2px;
+}
+
+#header .list .hot {
+	position: absolute;
+	top: 23px;
+	left: 92px;
+	padding: 0;
+	width: 26px;
+	height: 18px;
+	z-index: 2;
+	background: url("../img/index-ico.png") -370px -2px no-repeat;
+}
+
+.hdList .list a {
+	display: block;
+	padding-left: 21px;
+	height: 70px;
+	font-size: 14px;
+	color: #cccbcc;
+}
+
+.hdList .list em {
+	display: block;
+	height: 70px;
+	line-height: 76px;
+	padding-right: 21px;
+	background: url("../img/index-ico.png") right -67px no-repeat;
+}
+
+.hdList .list .lst {
+	padding-right: 38px;
+	background: none;
+}
+
+.hdList .list .activeA {
+	background: url("../img/allBarBg.png") -50px -191px no-repeat;
+}
+
+.hdList .activeA:hover .activeEm {
+    background: url("../img/allBarBg.png") right -191px no-repeat;
+}
+
+.hdList .list .activeEm {
+	background: url("../img/allBarBg.png") right -191px no-repeat;
+} 
+
+.hdList .list .activeA:hover {
+	background: url("../img/allBarBg.png") -50px -191px no-repeat;
+}
+.hdList .list .activeEm:hover {
+	background: url("../img/allBarBg.png") right -191px no-repeat; 
+}
+
+.hdList .list a:hover {
+	background: url("../img/allBarBg.png") -50px -261px no-repeat;
+}
+
+.hdList .list a:hover em {
+	background: url("../img/allBarBg.png") right -261px no-repeat;
+}
+
+#header .hdRi {
+	position: relative;
+	float: right;
+	padding-top: 21px;
+	height: 49px;
+}
+
+#header .hdRi form {
+	float: left;
+	width: 210px;
+	height: 31px;
+	border-radius: 12px;
+}
+
+#header .hdRi .searchWrap {
+	overflow: hidden;
+	position: relative;
+	width: 210px;
+	height: 31px;
+	border-radius: 12px;
+	background: #e8e8e8;
+}
+
+.hdRi .searchWrap .searchIco {
+	position: absolute;
+	left: 13px;
+	top: 9px;
+	padding-right: 8px;
+	width: 12px;
+	height: 12px;
+	background: url("../img/index-ico.png") -95px -42px no-repeat;
+}
+
+.hdRi .searchWrap .search {
+	position: absolute;
+	left: 33px;
+	padding:9px 20px 9px 0;
+	width: 157px;
+	height: 12px;
+	line-height: 12px;
+	color: #9b9a9b;
+	background: none;
+}
+
+#header .hdRi .loginWrap {
+	float: left;
+	position: relative;
+	padding-left: 15px;
+	width: 46px;
+}
+
+#header .hdRi .login {
+	display: block;
+	height: 31px;
+	line-height: 34px;
+	color: #999;
+}
+
+.hdRi .login .triIco {
+	position: absolute;
+	right: 0;
+	top: 14px;
+	width: 12px;
+	height: 7px;
+	background: url("../img/index-ico.png") no-repeat;
+}
+
+.hdRi .login:hover .triIco {
+	background-position: -16px 0;
+}
+
+#header .hdRi a:hover {
+	text-decoration: underline;
+	color: #787878;
+}
+
+.hdRi .loginWrap .topHideList {
+ 	position: absolute;
+ 	top: 38px;
+ 	right: -16px;
+ 	border: 1px solid #000;
+ 	width: 158px;
+ 	border-radius: 4px;
+ 	z-index: 10;
+}
+
+.hdRi .loginWrap .ico_tri {
+ 	position: absolute;
+ 	top: 31px;
+ 	right: 27px;
+ 	width: 16px;
+ 	height: 9px;
+ 	background: url("../img/toplist.png") -20px 0;
+ 	z-index: 11;
+}
+
+.loginWrap .topHideList .list {
+ 	border-radius: 4px;
+ 	border: 1px solid #404040;
+}
+
+.loginWrap .list li {
+ 	position: relative;
+}
+
+.loginWrap .list a {
+ 	display: block;
+ 	height: 38px;
+ 	line-height: 38px;
+ 	padding-left: 45px;
+ 	background: #2a2a2a;
+ 	color: #cccccc;
+}
+
+#header .list a:hover {
+	text-decoration: none;
+	background-color: #353535;
+	color: #fff;
+}
+
+.loginWrap .list span {
+	position: absolute;
+	left: 17px;
+	top: 10px;
+	width: 18px;
+	height: 18px;
+	background: url("../img/toplist.png") no-repeat;
+}
+
+.loginWrap .list .ico_phone {
+	background-position: 0 0;
+}
+
+.loginWrap .list .ico_wx {
+	background-position: -20px -20px;
+}
+
+.loginWrap .list .ico_qq {
+	background-position: -20px -40px;
+}
+
+.loginWrap .list .ico_sina {
+	background-position: 0 -20px;
+}
+
+.loginWrap .list .ico_163 {
+	background-position: 0 -40px;
+}
+
+#header .bar {
+	display: none;
+	height: 7px;
+	background: url("../img/reXBg.png") 0 -111px repeat-x;
+}
+
+#header .navBar {
+	height: 35px;
+	line-height: 35px;
+	background: url("../img/reXBg.png") 0 -72px repeat-x;
+}
+
+#header .navBar .wrap {
+	height: 35px;
+	padding-left: 180px;
+	width: 800px;
+}
+
+#header .navBar .textList {
+	margin: 0 auto;
+}
+
+#header .textList li {
+	float: left;
+	margin: 0 22px 0 12px;
+	padding: 7px 0 6px;
+}
+
+#header .navBar a,
+#header .navBar em {
+	display: block;
+	height: 22px;
+	line-height: 22px;
+}
+
+#header .navBar a {
+	padding-left: 14px;
+	color: #fefefe;
+}
+
+#header .navBar em {
+	padding-right: 14px;
+	background: right 0;
+}
+
+#header .navBar a:hover {
+	background: url("../img/allBarBg.png") -100px -492px no-repeat;
+}
+
+#header .navBar a:hover em {
+	background: url("../img/allBarBg.png") right -492px no-repeat;
+}
+
+#header .navBar .bgL {
+	background: url("../img/allBarBg.png") -100px -492px no-repeat;
+}
+
+#header .navBar .bgR {
+	background: url("../img/allBarBg.png") right -492px no-repeat;
+}
+
+
+/* Header End */
+
+/* Banner */
+
+#banner {
+	height: 336px;
+	background: #1f1f21;
+}
+
+#banner .wrap {
+	position: relative;
+}
+
+#banner .picWrap {
+	position: absolute;
+}
+
+#banner .picWrap img {
+	display: block;
+	width: 730px;
+	height: 336px;
+}
+
+#banner .picWrap .dotIco {
+	position: absolute;
+	left: 292px;
+	bottom: 13px;
+	height: 6px;
+}
+
+.picWrap .dotIco a {
+	float: left;
+	width: 6px;
+	height: 6px;
+	margin-right: 17px;
+	background: url("../img/banner.png") -4px -350px no-repeat;
+}
+
+.picWrap .dotIco .active {
+	background-position: -23px -350px;
+}
+
+#banner .dlArea {
+	position: absolute;
+	top: 0;
+	right: -2px;
+	width: 254px;
+	height: 336px;
+	background: url("../img/downloadArea.png") no-repeat;
+}
+
+#banner .dlArea .dlWrap {
+	position: absolute;
+	top: 212px;
+	left: 19px;
+	width: 215px;
+	height: 56px;
+}
+
+#banner .dlArea .dlWrap:hover {
+	background: url("../img/downloadArea.png") 0 -340px no-repeat;
+}
+
+#banner .dlArea .dlText {
+	position: absolute;
+	top: 268px;
+	left: 0;
+	width: 254px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color: #8c8b8e;
+}
+
+#banner .dlArea .leftShadow,
+#banner .dlArea .rightShadow {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 20px;
+	height: 336px;
+	background: url("../img/banner.png") no-repeat;
+}
+
+#banner .dlArea .leftShadow {
+	left: -20px;
+	background-position: -1px 0;
+}
+
+#banner .dlArea .rightShadow {
+	right: -20px;
+	background-position: -20px 0;
+}
+
+#banner .wrap .leftBtn {
+	position: absolute;
+	top: 137px;
+	left: -61px;
+	width: 37px;
+	height: 63px;
+	background: url("../img/banner.png") 0 -360px;
+}
+
+#banner .wrap .leftBtn:hover {
+	background: url("../img/banner.png") 0 -430px;
+}
+
+#banner .wrap .rightBtn {
+	position: absolute;
+	top: 137px;
+	right: -61px;
+	width: 37px;
+	height: 63px;
+	background: url("../img/banner.png") 0 -508px;
+}
+
+#banner .wrap .rightBtn:hover {
+	background: url("../img/banner.png") 0 -578px;
+}
+
+/* Banner End */
+
+/* Content */
+
+#content {
+	background: #f5f5f5;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+#content .wrap {
+	border-left: 1px solid #d4d4d4;
+	border-right: 1px solid #d4d4d4;
+	background: #fefefe;
+}
+
+#content .main {
+	float: left;
+	width: 689px;
+	padding: 0 20px 40px;
+	border-right: 1px solid #d4d4d4;
+
+}
+
+#content .main .header {
+	padding-top: 17px;
+	width: 689px;
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 2px solid #c50c0c;
+}
+
+.main .header .title {
+	float: left;
+	padding: 0 7px 0 34px;
+	height: 36px;
+	font: normal 20px/36px "微软雅黑";
+	color: #434343;
+	background: url("../img/index-ico.png") -364px -40px no-repeat;
+}
+
+.main .header .nav {
+	float: left;
+	height: 36px;
+}
+
+.header .nav a {
+	float: left;
+	padding: 0 16px 0 13px;
+	height: 36px;
+	color: #656565;
+	background: url("../img/index-ico.png") -176px -94px no-repeat;
+}
+
+.header .nav .last {
+	background: none;
+}
+
+.main .header .more {
+	float: right;
+	padding: 2px 26px 0 0;
+	height: 34px;
+	line-height: 34px;
+	color: #666;
+	background: url("../img/index-ico.png") -195px -61px no-repeat;
+}
+
+.header .nav a:hover,
+.header .more:hover {
+	text-decoration: underline;
+}
+
+.main .hotRecom .detail {
+	width: 689px;
+}
+
+.main .hotRecom .picList {
+	padding-top: 20px;
+	margin-right: -42px;
+}
+
+.main .hotRecom .list {
+	float: left;
+	display: inline;
+	height: 234px;
+	margin-right: 42px;
+}
+
+.hotRecom .list .picWrap {
+	position: relative;
+}
+
+.hotRecom .picWrap .ico_crown {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	background: url("../img/index-ico.png") -249px -78px no-repeat;
+}
+
+.hotRecom .picWrap .picMask {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 140px;
+	height: 27px;
+	color: #ccc;
+	background: url("../img/coverall.png") 0 -537px no-repeat;
+}
+
+.hotRecom .picMask .picPlayIco {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	width: 16px;
+	height: 16px;
+	background: url("../img/iconall.png") no-repeat;
+}
+
+.hotRecom .picMask .picPlayIco:hover {
+	background-position: 0 -60px;
+}
+
+.hotRecom .picMask .ico_headset {
+	float: left;
+	width: 14px;
+	height: 11px;
+	background: url("../img/iconall.png") 0 -24px no-repeat;
+	margin: 9px 5px 7px 10px;
+}
+
+.hotRecom .picMask .pt {
+	float: left;
+	margin: 7px 0 0 0;
+}
+
+.hotRecom .list img {
+	display: block;
+	width: 140px;
+	height: 140px;
+}
+
+.hotRecom .list .titleHd {
+	margin-top: 8px;
+	width: 140px;
+	font: normal 14px/19px "宋体";
+}
+
+.hotRecom .detail .text {
+	color: #010101;
+}
+
+.hotRecom .detail .text:hover {
+	text-decoration: underline;
+}
+
+.hotRecom .text .radioShow {
+	float: left;
+	width: 35px;
+	height: 17px;
+	margin-right: 7px;
+	background: url("../img/index-ico.png") -63px 0 no-repeat;
+}
+
+.detail .AdPic img {
+	display: block;
+	width: 689px;
+	height: 75px;
+}
+
+.main .newRecom .header {
+	margin-top: 15px;
+}
+
+.main .newRecom .focusPic {
+	position: relative;
+	padding: 0 19px 0 23px;
+	margin-top: 20px;
+	width: 645px;
+	height: 186px;
+	background: #f5f5f5;
+	border: 1px solid #d4d4d4;
+}
+
+.newRecom .focusPic .listWrap {
+	width: 645px;
+	height: 186px;
+	overflow: hidden;
+}
+
+.newRecom .listWrap li {
+	float: left;
+	display: inline;
+	position: relative;
+	margin: 0 6px 0 5px;
+	padding: 29px 0 14px;
+	width: 118px;
+}
+
+.newRecom .listWrap .pic {
+	position: relative;
+	display: block;
+	width: 118px;
+	height: 112px;
+	background: url("../img/allBarBg.png") -45px -379px no-repeat;
+}
+
+.newRecom .listWrap .icoPlay {
+	position: absolute;
+	left: 70px;
+	top: 70px;
+	width: 22px;
+	height: 22px;
+	background: url("../img/iconall.png") -1px -216px no-repeat;
+}
+
+.newRecom .listWrap .icoPlay:hover {
+	background: url("../img/iconall.png") -1px -111px no-repeat;
+}
+
+.listWrap .pic img {
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+
+.newRecom .listWrap .song,
+.newRecom .listWrap .singer {
+	position: relative;
+	top: -5px;
+	display: block;
+	width: 100px;
+	height: 18px;
+	line-height: 18px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.newRecom .listWrap .song {
+	color: #010101;
+}
+
+.newRecom .listWrap .singer {
+	color: #656565;
+}
+
+.newRecom .listWrap a:hover {
+	text-decoration: underline;
+}
+
+.newRecom .focusPic .backBtn,
+.newRecom .focusPic .goBtn {
+	position: absolute;
+	top: 73px;
+	width: 7px;
+	height: 13px;
+	background: url("../img/index-ico.png") no-repeat;
+} 
+
+.newRecom .focusPic .backBtn {
+	left: 9px;
+	background-position: -290px -45px;
+}
+
+.newRecom .focusPic .backBtn:hover {
+	background-position: -310px -45px;
+}
+
+.newRecom .focusPic .goBtn {
+	right: 12px;
+	background-position: -331px -45px;
+}
+
+.newRecom .focusPic .goBtn:hover {
+	background-position: -351px -45px;
+}
+
+.main .rankList {
+	margin-top: 17px;
+}
+
+.main .rankList .ranking {
+	margin-top: 20px;
+	width: 687px;
+	border: 1px solid #d4d4d4;
+	border-right: none;
+}
+
+.main .rankList dl {
+	float: left;
+	width: 228px;
+	height: 470px;
+	border-right: 1px solid #d4d4d4;
+}
+
+.main .ranking dt {
+	padding: 19px 0 0 19px;
+	width: 209px;
+	height: 100px;
+	background: #f4f4f4;
+}
+
+.main .ranking .picWrap {
+	position: relative;
+	float: left;
+	display: inline;
+	width: 80px;
+	height: 80px;
+	z-index: 2;
+}
+
+.ranking .picWrap .pic,
+.ranking .titleWrap img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.ranking .picWrap .ico_boxShodow {
+	position: absolute;
+	left: -11px;
+	bottom: -16px;
+	width: 97px;
+	height: 17px;
+	background: url("../img/index-ico.png") -157px -40px no-repeat;
+}
+
+.ranking .titleWrap .pic {
+	float: left;
+	position: relative;
+	background: url("../img/allBarBg.png") -45px -381px no-repeat;
+}
+
+.ranking .titleWrap .title {
+	float: left;
+	margin-left: 10px;
+	width: 110px;
+	height: 80px;
+}
+
+.ranking .title h3 {
+	height: 28px;
+	font: bold 14px/28px "宋体";
+}
+
+.ranking .title h3 a {
+	color: #5c5c5d;
+}
+
+.ranking .title h3 a:hover {
+	text-decoration: underline;
+}
+
+.ranking .title .aWrap {
+	margin-top: 4px;
+}
+
+.ranking .title .play,
+.ranking .title .add {
+	float: left;
+	width: 22px;
+	height: 22px;
+	background: url("../img/index-ico.png") no-repeat;
+}
+
+.ranking .title .play {
+	background-position: 0 -10px;
+}
+
+.ranking .title .play:hover {
+	background-position: 0 -35px;
+}
+
+.ranking .title .add {
+	margin-left: 10px;
+	margin-top: 2px;
+	background-position: -28px -11px;
+}
+
+.ranking .title .add:hover {
+	background-position: -28px -37px;
+}
+
+.main .ranking dd {
+	padding-left: 15px;
+	height: 32px;
+	line-height: 32px;
+	background: #e8e8e8;
+}
+
+.main .ranking dd:nth-child(even) {
+	background: #e8e8e8;
+}
+
+.main .ranking dd:nth-child(odd) {
+	background: #f4f4f4;
+}
+
+.ranking dd span,
+.ranking dd a {
+	float: left;
+}
+
+.ranking dd span {
+	width: 35px;
+	font-size: 16px;
+	text-align: center;
+	color: #747576;
+}
+
+.ranking dd span.index {
+	color: #c94042;
+}
+
+.ranking dd .sName {
+	width: 98px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ranking dd .play,
+.ranking dd .add,
+.ranking dd .collect {
+	margin: 7px 8px 0 0;
+	width: 17px;
+	height: 17px;
+
+}
+
+.ranking dd .play {
+	background: url("../img/index-ico.png") -104px 0 no-repeat;
+}
+.ranking dd .play:hover {
+	background-position: -123px 0;
+}
+
+.ranking dd .add {
+	background: url("../img/index-ico.png") -145px 0 no-repeat;
+}
+
+.ranking dd .add:hover {
+	background-position: -163px 0;
+}
+
+.ranking dd .collect {
+	background: url("../img/index-ico.png") -182px 0 no-repeat;
+}
+
+.ranking dd .collect:hover {
+	background-position: -202px 0;
+}
+
+.ranking dd.last {
+	padding-right: 30px;
+}
+
+.ranking .last a:hover {
+	text-decoration: underline;
+}
+
+.ranking dd .more {
+	float: right;
+}
+
+#content .minor {
+	float: left;
+	width: 250px;
+}
+
+#content .minor .userLogin {
+	position: relative;
+	width: 250px;
+	height: 126px;
+	background: url("../img/allBarBg.png") 0 0 no-repeat;
+}
+
+.minor .userLogin p {
+ 	padding: 15px 24px 0 22px;
+ 	width: 204px;
+ 	height: 44px;
+ 	line-height: 22px;
+ 	color: #656565;
+}
+
+.minor .userLogin .login {
+	position: absolute;
+	left: 75px;
+	bottom: 20px;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fefefe;
+	background: url("../img/allBarBg.png") -45px -341px no-repeat;
+}
+
+.minor .userLogin .login:hover {
+	background: url("../img/allBarBg.png") -150px -341px no-repeat;
+}
+
+.minor .enterSingers {
+	padding: 6px 20px 20px;
+}
+
+.minor .enterSingers .caption,
+.minor .hotDj .caption {
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #cccbcc;
+}
+
+.minor .caption h4 {
+	float: left;
+	color: #323232;
+}
+
+.minor .caption a {
+	float: right;
+	color: #656565;
+}
+
+.minor .caption a:hover {
+	text-decoration: underline;
+}
+
+.enterSingers .listWrap {
+	padding-top: 6px;
+	width: 210px;
+}
+
+.enterSingers .singerList .list {
+	position: relative;
+	margin-top: 14px;
+	width: 208px;
+	height: 60px;
+	border: 1px solid #e8e8e8;
+}
+
+.enterSingers .singerList .pic {
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	width: 62px;
+	height: 62px;
+}
+
+.enterSingers .singerList .txt {
+	position: absolute;
+	left: 61px;
+	top: 0;
+	padding: 0 13px 8px 14px;
+	background: #fafafa;
+}
+
+.enterSingers .singerList .txt:hover {
+	background: #f4f4f4;
+}
+
+.enterSingers .singerList strong {
+	display: block;
+	height: 32px;
+	width: 120px;
+	font: bold 14px/32px "宋体";
+	color: #323232;
+}
+
+.enterSingers .singerList span {
+	display: block;
+	height: 20px;
+	width: 120px;
+	line-height: 20px;
+	color: #656565;
+}
+
+.enterSingers .listWrap .apply {
+	margin-top: 14px;
+	display: block;
+	width: 210px;
+	height: 32px;
+	line-height: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #323232;
+	background: url("../img/allBarBg.png") -40px -127px no-repeat;
+}
+
+.enterSingers .listWrap .apply:hover {
+	background: url("../img/allBarBg.png") -40px -159px no-repeat;
+}
+
+.minor .hotDj {
+	padding: 0 20px;
+} 
+
+.minor .hotDj .djWrap {
+	padding-top: 10px;
+}
+
+.hotDj .djWrap li {
+	margin-top: 10px;
+	height: 40px;
+}
+
+.hotDj .djWrap .pic {
+	float: left;
+}
+
+.hotDj .djWrap .pic img {
+	width: 40px;
+	height: 40px;
+}
+
+.hotDj .djWrap .txtBox {
+	float: left;
+	margin-left: 10px;
+	height: 40px;
+	width: 160px;
+	font-size: 12px;
+}
+
+.hotDj .txtBox .DJerName {
+	float: left;
+	line-height: 20px;
+	color: #010101;
+}
+
+.hotDj .txtBox .icov {
+	float: left;
+	width: 18px;
+	height: 20px;
+	background: url("../img/index-ico.png") -91px -15px no-repeat;
+}
+
+.hotDj .txtBox .intro {
+	float: left;
+	margin-top: 2px;
+	width: 160px;
+	height: 18px;
+	line-height: 18px;
+}
+
+#content .top {
+	position: fixed;
+	display: block;
+	left: 1176px;
+	bottom: 160px;
+	width: 47px;
+	height: 43px;
+	background: url("../img/allBarBg.png") -168px -379px no-repeat;
+}
+
+/* Content End */
+
+
+/* Footer */
+
+#footer {
+	height: 124px;
+	background: #fefefe;
+}
+
+#footer .wrap {
+	padding-top: 32px;
+}
+
+#footer .lePlan,
+#footer .cenPlan {
+	position: relative;
+	padding-left: 53px;
+	float: left;
+	width: 247px;
+	height: 38px;
+}
+
+#footer .lePlan strong,
+#footer .cenPlan strong,
+#footer .lePlan span,
+#footer .cenPlan span {
+	display: block;
+	width: 230px;
+	height: 16px;
+	line-height: 16px;
+}
+
+#footer .lePlan strong,
+#footer .cenPlan strong {
+	color: #656565;
+}
+
+#footer .lePlan span,
+#footer .cenPlan span {
+	margin-top: 6px;
+	color: #9b9a9b;
+}
+
+#footer .lePlan .f_icoL,
+#footer .cenPlan .f_icoC {
+	position: absolute;
+	left: 4px;
+	top: -4px;
+	width: 37px;
+	height: 37px;
+	background: url("../img/index-ico.png") no-repeat;
+}
+
+#footer .lePlan .f_icoL {
+	background-position: -282px 0;
+}
+
+#footer .cenPlan .f_icoC {
+	background-position: -327px 0;
+}
+
+#footer .copy {
+	float: left;
+	margin-right: -1px;
+	width: 381px;
+	color: #9b9a9b;
+}
+
+#footer .copy a {
+	color: #9b9a9b;
+}
+
+#footer .copy a:hover {
+	text-decoration: underline;
+}
+
+.copy .about,
+.copy .other {
+	height: 16px;
+	line-height: 16px;
+}
+
+.copy .about a,
+.copy .about span {
+	float: left;
+}
+
+.copy .other {
+	margin-top: 6px;
+}
+
+.copy .other .callback {
+	float: right;
+	padding-left: 22px;
+	height: 18px;
+	background: url("../img/index-ico.png") -111px -20px no-repeat;
+}
+
+/* Footer End */

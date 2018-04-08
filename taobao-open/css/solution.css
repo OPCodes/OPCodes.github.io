@@ -1,0 +1,766 @@
+/* Common */
+
+body {
+	font: 14px/1.5 'SingleMaltaRegular', 'Microsoft Yahei', '微软雅黑', Arial;
+}
+
+.wrap {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.hTitle {
+	height: 72px;
+	line-height: 72px;
+	font-size: 38px;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+.hTitCont {
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+}
+
+/* Common End */
+
+/* Header */
+
+#header .navList .hdNav {
+	font-family: "微软雅黑";
+}
+
+#header .navList li.active {
+	background: #2b2d34;
+}
+
+#header .navList .oMapDownList {
+	display: none;
+}
+
+#header .list2:hover .oMapDownList {
+	display: block;
+}
+
+/* Header End */
+
+/* Solution */
+
+#solution {
+	padding-top: 65px;
+	height: 635px;
+	background: url("../img/solutionBg.png") center center no-repeat;
+}
+
+#solution .picWrap {
+	margin-right: -40px;
+	padding-top: 66px; 
+}
+
+#solution .picWrap .picList {
+	float: left;
+	width: 270px;
+	margin-right: 40px;
+}
+
+.picWrap .picList .aWrap {
+	display: block;
+	position: relative;
+	width: 270px;
+	height: 310px;
+	background: #fff;
+}
+
+.picWrap .aWrap .icoHotTopic {
+	position: absolute;
+	left: 101px;
+	top: -34px;
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+.picWrap .list1 .icoHotTopic {
+	background: #fff url("../img/index.png") -2px -113px no-repeat;
+}
+
+.picWrap .list2 .icoHotTopic {
+	background: #fff url("../img/index.png") -68px -113px no-repeat;
+}
+
+.picWrap .list3 .icoHotTopic {
+	background: #fff url("../img/index.png") -138px -111px no-repeat;
+}
+
+.picWrap .list4 .icoHotTopic {
+	background: #fff url("../img/index.png") -203px -111px no-repeat;
+}
+
+.picWrap .aWrap .mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 270px;
+	height: 140px;
+	background: #000;
+	opacity: .4;
+}
+
+.picWrap .aWrap img {
+	width: 270px;
+	height: 140px;
+}
+
+.picWrap .aWrap .hotTopic {
+	position: absolute;
+	left: 55px;
+	top: 110px;
+	width: 160px;
+	height: 42px;
+	font: normal 20px/42px "微软雅黑";
+	text-align: center;
+	background: #fff;
+	color: #0089cd;
+}
+
+.picWrap .aWrap .hotTopCont {
+	margin: 0 auto;
+	padding-top: 53px;
+	width: 210px;
+	height: 48px;
+	line-height: 24px;
+	font-size: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color: #333;
+}
+
+.picWrap .aWrap .icoDownArr {
+	position: absolute;
+	left: 121px;
+	bottom: 32px;
+	width: 27px;
+	height: 16px;
+	background: url("../img/index.png") -276px -117px no-repeat;
+}
+
+.picWrap .aWrap:hover {
+	background: #0089cd;
+}
+
+.list1 .aWrap:hover .icoHotTopic {
+	background: #0089cd url("../img/index.png") -4px -177px no-repeat;
+}
+
+.list2 .aWrap:hover .icoHotTopic {
+	background: #0089cd url("../img/index.png") -69px -178px no-repeat;
+}
+
+.list3 .aWrap:hover .icoHotTopic {
+	background: #0089cd url("../img/index.png") -138px -178px no-repeat;
+}
+
+.list4 .aWrap:hover .icoHotTopic {
+	background: #0089cd url("../img/index.png") -204px -176px no-repeat;
+}
+
+.picWrap .aWrap:hover .mask {
+	opacity: 0;
+	transition: .5s;
+}
+
+.picWrap .aWrap:hover .hotTopic {
+	color: #fff;
+	background: #0089cd;
+}
+
+.picWrap .aWrap:hover .hotTopCont {
+	color: #fff;
+	background: #0089cd;
+}
+
+.picWrap .aWrap:hover .icoDownArr {
+	background: #0089cd url("../img/index.png") -276px -145px no-repeat;
+}
+
+#hotTopics {
+	padding-top: 65px;
+	height: 671px;
+	background: #f5f5f5;
+}
+
+#hotTopics .hotTitle,
+#hotTopics .hTitContent {
+	color: #333;
+}
+
+#hotTopics .picWrap {
+	margin-top: 66px;
+}
+
+
+.picWrap .newTrends {
+	position: relative;
+	float: left;
+	height: 363px;
+	width: 576px;
+	margin-right: 24px;
+	background: url("../img/hotTopicLeBg.jpg") no-repeat;
+}
+
+.picWrap .newTrends .newTrContent {
+	position: absolute;
+	left: 187px;
+	top: 152px;
+	width: 330px;
+	height: 148px;
+}
+
+.picWrap .newTrends .newsTitle {
+	height: 36px;
+	border-bottom: 1px solid #dbdbdd;
+}
+
+.picWrap .newTrends .aWrap {
+	display: block;
+	height: 36px;
+	width: 328px;
+	line-height: 36px;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #0089cd;
+}
+
+.picWrap .newTrends .aWrap:hover {
+	background: none;
+}
+
+.newTrends .aWrap:hover .news-time {
+	color: #0089cd;
+}
+
+.picWrap .newTrends .news-time {
+	display: block;
+	float: left;
+	margin-right: 5px;
+	height: 36px;
+	padding-left: 15px;
+	color: #333;
+	background: url("../img/index.png") -313px -16px no-repeat;
+}
+
+.picWrap .topicItems {
+	position: relative;
+	float: left;
+	height: 363px;
+	width: 600px;
+	background: #0089cd;
+}
+
+.picWrap .topicItems .leftItem {
+	position: absolute;
+	width: 160px;
+	left: 84px;
+	top: 83px;
+}
+
+.picWrap .topicItems .tTit {
+	height: 48px;
+	line-height: 48px;
+	font-size: 24px;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+.picWrap .topicItems .itemList {
+	padding-top: 8px;
+	background: url("../img/index.png") -311px -111px no-repeat;
+}
+
+.picWrap .topicItems li {
+	height: 34px;
+	line-height: 34px;
+	padding-left: 26px;
+	color: #fff;
+}
+
+.picWrap .itemList a {
+	font-size: 16px;
+}
+
+.picWrap .itemList a:hover .detail {
+	background: #73c6ef;
+}
+
+.picWrap .itemList .detail,
+.picWrap .itemList .comeSoon {
+	display: inline-block;
+	margin-left: 5px;
+	width: 50px;
+	height: 18px;
+	line-height: 18px;
+	border-radius: 8px;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+	background: #44afe4;
+} 
+
+.picWrap .itemList .comeSoon {
+	width: 65px;
+	background: #aaa;
+}
+
+.picWrap .topicItems .rightItem {
+	position: absolute;
+	left: 348px;
+	top: 85px;
+} 
+
+#taoOpen {
+	padding-top: 74px;
+	height: 683px;
+	background: #fff;
+}
+
+#taoOpen .openTitle,
+#taoOpen .oTitContent {
+	color: #333;
+}
+
+#taoOpen .picWrap {
+	position: relative;
+	margin-top: 67px;
+}
+
+#taoOpen .picWrap .leftPic {
+	position: absolute;
+	left: 2px;
+	top: 0;
+}
+
+#taoOpen .leftPic .pic {
+	position: relative;
+	display: block;
+	width: 576px;
+	height: 363px;
+}
+
+#taoOpen .leftPic .kownMore {
+	position: absolute;
+	left: 224px;
+	top: 284px;
+	width: 124px;
+	height: 31px;
+	line-height: 34px;
+	border: 2px solid #fff;
+	border-radius: 14px;
+	letter-spacing: 1px;
+	text-align: center;
+	background: #00cd6f;
+}
+
+#taoOpen .pic:hover .kownMore {
+	background: #3fda93;
+}
+
+#taoOpen .picWrap .rightPic {
+	position: absolute;
+	right: 1px;
+	top: 0;
+}
+
+/* Solution End */
+
+/* Merchant */
+
+#merchant {
+	padding-top: 64px;
+	height: 639px;
+	background: #f5f5f5;
+}
+
+#merchant .merTitle,
+#merchant .mTitCont {
+	color: #333;
+}
+
+#merchant .picList {
+	margin-top: 67px;
+}
+
+#merchant .picList .item {
+	position: relative;
+	float: left;
+	width: 210px;
+	margin: 0 15px 25px;
+}
+
+#merchant .item .mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 210px;
+	height: 130px;
+}
+
+#merchant .picList .pic {
+	display: block;
+	width: 210px;
+	height: 130px;
+}
+
+#merchant .picList .mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 210px;
+	height: 130px;
+	background: #000;
+	opacity: .6; 
+}
+
+#merchant .picList .text {
+	display: block;
+	height: 50px;
+	line-height: 48px;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	color: #333;
+	background: #eee;
+}
+
+#merchant .item .ico {
+	position: absolute;
+	left: 84px;
+	top: 45px;
+	width: 40px;
+	height: 40px;
+	z-index: 3;
+}
+
+#merchant .item1 .ico {
+	background: url("../img/index.png") 0 -248px no-repeat;
+}
+
+#merchant .item2 .ico {
+	background: url("../img/index.png") -44px -248px no-repeat;
+}
+
+#merchant .item3 .ico {
+	background: url("../img/index.png") -84px -248px no-repeat;
+}
+
+#merchant .item4 .ico {
+	background: url("../img/index.png") -128px -248px no-repeat;
+}
+
+#merchant .item5 .ico {
+	background: url("../img/index.png") -168px -248px no-repeat;
+}
+
+#merchant .item6 .ico {
+	background: url("../img/index.png") 0 -290px no-repeat;
+}
+
+#merchant .item7 .ico {
+	background: url("../img/index.png") -42px -290px no-repeat;
+}
+
+#merchant .item8 .ico {
+	background: url("../img/index.png") -85px -290px no-repeat;
+}
+
+#merchant .item9 .ico {
+	background: url("../img/index.png") -128px -290px no-repeat;
+}
+
+#merchant .item10 .ico {
+	background: url("../img/index.png") -168px -290px no-repeat;
+}
+
+#merchant .item:hover .mask {
+	opacity: .2;
+}
+
+#merchant li:hover .text {
+	color: #fff;
+	background: #aaa;
+}
+
+#merchant a:hover .text {
+	color: #fff;
+	background: #0089cd;
+}
+
+#merchant .picList .item1 {
+	background: url("../img/basic.png") 0 0 no-repeat;
+}
+
+#merchant .picList .item2 {
+	background: url("../img/basic.png") -246px 0 no-repeat;
+}
+
+#merchant .picList .item3 {
+	background: url("../img/basic.png") -492px 0 no-repeat;
+}
+
+#merchant .picList .item4 {
+	background: url("../img/basic.png") -738px 0 no-repeat;
+}
+
+#merchant .picList .item5 {
+	background: url("../img/basic.png") -984px 0 no-repeat;
+}
+
+#merchant .picList .item6 {
+	background: url("../img/basic.png") 0 -230px no-repeat;
+}
+
+#merchant .picList .item7 {
+	background: url("../img/basic.png") -246px -230px no-repeat;
+}
+
+#merchant .picList .item8 {
+	background: url("../img/basic.png") -492px -230px no-repeat;
+}
+
+#merchant .picList .item9 {
+	background: url("../img/basic.png") -738px -230px no-repeat;
+}
+
+#merchant .picList .item10 {
+	background: url("../img/basic.png") -984px -230px no-repeat;
+}
+
+/* Merchant End */
+
+/* IndSolution */
+
+#indSolution {
+	padding-top: 74px;
+	height: 679px;
+}
+
+#indSolution .indTitle,
+#indSolution .iTitContent {
+    color: #333;
+}
+
+#indSolution .picList {
+	margin-top: 67px;
+}
+
+#indSolution .picList .picBox {
+	position: relative;
+	float: left;
+	margin-right: 1px;
+	width: 239px;
+	height: 320px;
+}
+
+#indSolution .picBox1:hover .mask {
+	opacity: .6;
+}
+
+#indSolution .picBox1:hover .look {
+	background: #0089cd;
+	border-color: #0089cd;
+}
+
+#indSolution li:hover div.conBox {
+	display: none;
+}
+
+#indSolution li:hover .mask {
+	background: #aaa;
+	opacity: .9;
+}
+
+#indSolution li:hover .comingSoon {
+	display: block;
+}
+
+#indSolution .picList .picBox1 {
+	background: url("../img/indSolution.png") no-repeat;
+}
+
+#indSolution .picList .picBox2 {
+	background: url("../img/indSolution.png") -240px 0 no-repeat;
+}
+
+#indSolution .picList .picBox3 {
+	background: url("../img/indSolution.png") -480px 0 no-repeat;
+}
+
+#indSolution .picList .picBox4 {
+	background: url("../img/indSolution.png") -720px 0 no-repeat;
+}
+
+#indSolution .picList .picBox5 {
+	background: url("../img/indSolution.png") -960px 0 no-repeat;
+}
+
+#indSolution .picBox .conBox,
+#indSolution .picBox .conABox {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding-top: 83px;
+	width: 239px;
+	height: 237px;
+	z-index: 3;
+}
+
+#indSolution .picBox .mask,
+#indSolution .picBox .comingSoon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 239px;
+	z-index: 2;
+}
+
+#indSolution .picBox .mask {
+	height: 320px;
+}
+
+#indSolution .picBox .comingSoon {
+	display: none;
+	padding-top: 120px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 28px;
+	text-align: center;
+	color: #fff;
+}
+
+.picList .picBox1 .mask {
+	background: #002334;
+	opacity: .8;
+}
+
+.picList .picBox2 .mask {
+	background: #58536c;
+	opacity: .8;
+}
+
+.picList .picBox3 .mask {
+	background: #6385a7;
+	opacity: .8;
+}
+
+.picList .picBox4 .mask {
+	background: #d9d0c7;
+	opacity: .8;
+}
+
+.picList .picBox5 .mask {
+	background: #d79691;
+	opacity: .8;
+}
+
+.picList .conBox .industry {
+	display: block;
+	height: 40px;
+	width: 239px;
+	line-height: 40px;
+	font-size: 28px;
+	font-weight: normal;
+	text-align: center;
+	color: #fff;
+}
+
+.picList .conBox .solve {
+	display: block;
+	margin-top: 6px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+}
+
+.picList .conBox .look {
+	position: absolute;
+	left: 68px;
+	bottom: 124px;
+	width: 101px;
+	height: 31px;
+	line-height: 32px;
+	border: 1px solid #fff;
+	text-align: center;
+	border-radius: 13px;
+	color: #fff;
+}
+
+/* IndSolution End */
+
+/* ServeMeeting */
+
+#serveMeeting {
+	padding-top: 65px;
+	height: 814px;
+	background: #f5f5f5; 
+}
+
+#serveMeeting .serCaption {
+	color: #333;
+}
+
+#serveMeeting .serveMCont {
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+}
+
+#serveMeeting .serveMCont .moreContent {
+	color: #0089cd;
+	text-decoration: underline;
+}
+
+#serveMeeting .picBox {
+	margin-top: 66px;
+	text-align: center;
+}
+
+/* ServeMeeting End */
+
+/* Footer */
+
+#footer {
+	padding-top: 43px;
+	height: 157px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+#footer .wrap {
+	width: 1140px;
+}
+
+#footer .rel-links {
+	padding-top: 14px;
+}
+
+#footer .rel-links a {
+	font-size: 14px;
+}
+
+#footer .rel-links a:hover {
+	color: #28a3ef;
+}
+
+/* Footer End */

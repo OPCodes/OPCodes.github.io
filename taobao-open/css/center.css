@@ -1,0 +1,340 @@
+/* Common */
+
+.wrap {
+	width: 1200px;
+}
+
+/* Common End */
+
+
+/* Header */
+
+#header {
+	height: 64px;
+	line-height: 66px;
+}
+
+#header .navList .oMapDownList,
+#header .navList .dCenDownList {
+	display: none;
+}
+
+#header .list2:hover .oMapDownList,
+#header .list3:hover .dCenDownList {
+	display: block;
+}
+
+#header .navList .hdNav:hover {
+	text-decoration: underline;
+}
+
+#header .navList li.active {
+	background: #2b2d34;
+}
+
+/* Header End */
+
+/* Nav */
+
+#nav {
+	height: 80px;
+	background: #0182c1;
+	box-shadow: 0 5px 10px 0 #ddd;
+}
+
+#nav .wrap {
+	width: 1200px;
+}
+
+#nav .leftLoc {
+	float: left;
+	line-height: 82px;
+	color: #fff;
+}
+
+#nav .leftLoc a {
+	color: #fff;
+}
+
+#nav .rightSearch {
+	float: right;
+	overflow: hidden;
+	position: relative;
+	margin: 22px 22px 0 0;
+	border-radius: 2px;
+}
+
+#nav .rightSearch .search {
+	width: 258px;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 10px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	vertical-align: middle;
+	background: #1f91c8;
+	color: #50a1c7;
+}
+
+#nav .rightSearch .search:focus {
+	background: #fff;
+	color: #ccc;
+}
+
+#nav .rightSearch .ico-search {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	top: 10px;
+	right: 10px;
+	background: url("../img/index.png") -275px -178px no-repeat;
+}
+
+/* Nav End */
+
+/* Content */
+
+#docWrap {
+	padding-top: 42px;
+}
+
+.documentDetail {
+	float: left;
+	display: inline;
+	width: 360px;
+	margin: 0 20px;
+}
+
+.documentDetail .documentTit {
+	height: 58px;
+	width: 360px;
+	line-height: 58px;
+	font-size: 22px;
+	font-weight: normal;
+	color: #333;
+}
+
+.documentDetail .contList .item {
+	width: 360px;
+	height: 55px;
+	line-height: 56px;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+	font-family: "Microsoft Yahei";
+} 
+
+.documentDetail .item a {
+	color: #0089cd;
+}
+
+.documentDetail .item a:hover {
+	text-decoration: underline;
+}
+
+#container {
+	height: 935px;
+}
+
+#container .openServe,
+#container .hotTopics {
+	padding-top: 17px;
+}
+
+#container .commonTool {
+	padding-top: 37px;
+}
+
+#container h3 {
+	padding-left: 20px;
+	height: 108px;
+	line-height: 108px;
+	font-size: 22px;
+	font-weight: normal;
+	color: #333;
+}
+
+#container .picList {
+	height: 160px;
+}
+
+#container .picList li {
+	float: left;
+	display: inline;
+	margin: 0 20px;
+}
+
+#container .picList a {
+	display: block;
+	width: 160px;
+	height: 160px;
+}
+
+.openServe .list a {
+	background: url("../img/icoOpenSer.png") no-repeat;
+}
+
+.openServe .list1 a {
+	background-position: 0 0;
+}
+
+.openServe .list1 a:hover {
+	background-position: -160px 0;
+}
+
+.openServe .list2 a {
+	background-position: -320px 0;
+}
+
+.openServe .list2 a:hover {
+	background-position: -480px 0;
+}
+
+.openServe .list3 a {
+	background-position: 0 -160px;
+}
+
+.openServe .list3 a:hover {
+	background-position: -160px -160px;
+}
+
+.openServe .list4 a {
+	background-position: -320px -160px;
+}
+
+.openServe .list4 a:hover {
+	background-position: -480px -160px;
+}
+
+.openServe .list5 a {
+	background-position: 0 -320px;
+}
+
+.openServe .list5 a:hover {
+	background-position: -160px -320px;
+}
+
+.openServe .list6 a {
+	background-position: -320px -320px;
+}
+
+.openServe .list6 a:hover {
+	background-position: -480px -320px;
+}
+
+.hotTopics .list a {
+	background: url("../img/icoHotTps.png") no-repeat;
+}
+
+.hotTopics .list1 a {
+	background-position: 0 0;
+}
+
+.hotTopics .list1 a:hover {
+	background-position: -160px 0;
+}
+
+.hotTopics .list2 a {
+	background-position: -320px 0;
+}
+
+.hotTopics .list2 a:hover {
+	background-position: -480px 0;
+}
+
+.hotTopics .list3 a {
+	background-position: 0 -160px;
+}
+
+.hotTopics .list3 a:hover {
+	background-position: -160px -160px;
+}
+
+.hotTopics .list4 a {
+	background-position: -320px -160px;
+}
+
+.hotTopics .list4 a:hover {
+	background-position: -480px -160px;
+}
+
+.hotTopics .list5 a {
+	background-position: 0 -320px;
+}
+
+.hotTopics .list5 a:hover {
+	background-position: -160px -320px;
+}
+
+.hotTopics .list6 a {
+	background-position: -320px -320px;
+}
+
+.hotTopics .list6 a:hover {
+	background-position: -480px -320px;
+}
+
+.commonTool .list a {
+	background: url("../img/icoTools.png") no-repeat;
+}
+
+.commonTool .list1 a {
+	background-position: 0 0;
+}
+
+.commonTool .list1 a:hover {
+	background-position: -160px 0;
+}
+
+.commonTool .list2 a {
+	background-position: -320px 0;
+}
+
+.commonTool .list2 a:hover {
+	background-position: -480px 0;
+}
+
+.commonTool .list3 a {
+	background-position: 0 -160px;
+}
+
+.commonTool .list3 a:hover {
+	background-position: -160px -160px;
+}
+
+.commonTool .list4 a {
+	background-position: -320px -160px;
+}
+
+.commonTool .list4 a:hover {
+	background-position: -480px -160px;
+}
+
+.commonTool .list5 a {
+	background-position: 0 -320px;
+}
+
+.commonTool .list5 a:hover {
+	background-position: -160px -320px;
+}
+
+.commonTool .list6 a {
+	background-position: -320px -320px;
+}
+
+.commonTool .list6 a:hover {
+	background-position: -480px -320px;
+}
+
+/* Content End */
+
+/* Footer */
+
+#footer .wrap {
+	width: 1170px;
+}
+
+#footer .rel-links a:hover {
+	text-decoration: underline;
+}
+
+/* Footer End */

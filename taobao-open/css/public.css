@@ -1,0 +1,355 @@
+/* Css Reset */
+
+body {
+	min-width: 1180px;
+	margin: 0;
+	font: 12px tahoma,"Microsoft Yahei","SimSun",sans-serif !important;
+	color: #333;
+	background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dd {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #e5e9ee;
+}
+
+img {
+	border: none;
+	vertical-align: top;
+}
+
+input {
+	padding: 0;
+	outline: none;
+	border: none;
+}
+
+.clearFix {
+	zoom: 1;
+} 
+
+.clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.wrap {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+/* Reset End */
+
+/* Hearder */
+
+#header {
+	height: 64px;
+	background: #373942;
+}
+
+#header .wrap {
+	width: 1179px;
+}
+
+#header .mainLogo {
+	float: left;
+	width: 180px;
+}
+
+.mainLogo a {
+	position: relative;
+	display: block;
+	height: 62px;
+	padding: 2px 0 0 57px;
+	font: 18px/62px "微软雅黑";
+}
+
+.mainLogo .logo {
+	position: absolute;
+	left: 0;
+	top: 22px;
+	width: 53px;
+	height: 26px;
+	background: url("../img/index.png") no-repeat;
+}
+
+#header .navList {
+	float: left;
+	padding-left: 25px;
+}
+
+.navList .list {
+	float: left;
+	position: relative;
+}
+
+.navList .list .hdNav {
+	display: block;
+	position: relative;
+	padding: 2px 20px 0;
+	height: 62px;
+	line-height: 62px;
+	font-size: 14px;
+}
+
+.navList .list .ico-oMTri,
+.navList .list .ico-dCTri {
+	position: absolute;
+	top: 29px;
+	right: 23px;
+	width: 9px;
+	height: 7px;
+	background: url("../img/index.png") -291px -20px no-repeat;
+}
+
+.navList .openMap:hover .ico-oMTri {
+	background: url("../img/index.png") -273px -20px no-repeat;
+}
+
+.navList .doCenter:hover .ico-dCTri {
+    background: url("../img/index.png") -273px -20px no-repeat;
+}
+
+.navList .list .openMap,
+.navList .list .doCenter {
+	padding-right: 36px;
+}
+
+.navList .list a:hover {
+	background: #2b2d34;
+}
+
+.navList .list .oMapDownList {
+	position: absolute;
+	left: -115px;
+	top: 64px;
+	width: 850px;
+	padding: 29px 10px 35px 5px;
+	background: #2b2d34;
+	z-index: 10;
+}
+
+.navList .oMapDownList .downList {
+	float: left;
+	display: inline;
+	width: 140px;
+	margin: 0 15px;
+}
+
+.navList .oMapDownList h3 {
+	position: relative;
+	margin-bottom: 12px;
+	padding-left: 46px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #5eb5fe;
+}
+
+.navList .oMapDownList h3 span {
+	position: absolute;
+	left: 23px;
+	top: 0;
+	width: 20px;
+	height: 30px;
+}
+
+.navList .oMapDownList .downTit {
+	color: #5eb5fe;
+}
+
+.navList .oMapDownList .icoListFi {
+	background: url("../img/index.png") -10px -332px no-repeat;
+}
+
+.navList .oMapDownList .icoListSe {
+	background: url("../img/index.png") -98px -332px no-repeat;
+}
+
+.navList .oMapDownList .icoListFo {
+	background: url("../img/index.png") -54px -332px no-repeat;
+}
+
+.navList .oMapDownList .icoListFif {
+	background: url("../img/index.png") -138px -332px no-repeat;
+}
+
+.navList .aWrap a {
+	display: block;
+	position: relative;
+	padding-left: 24px; 
+	width: 116px;
+	height: 42px;
+	border-bottom: 1px solid #383a45;
+	line-height: 42px;
+	font-size: 12px;
+	color: #9b9b9c;
+}
+
+.navList .aWrap a:hover,
+.dCenDownList .dCList a:hover {
+	color: #5eb5fe;
+}
+
+.navList .aWrap a:hover span,
+.dCenDownList a:hover span  {
+	position: absolute;
+	left: 8px;
+	top: 16px;
+	width: 6px;
+	height: 10px;
+	background: url("../img/index.png") -318px -53px no-repeat;
+}
+
+.navList .list .dCenDownList {
+	position: absolute;
+	left: 0;
+	top: 64px;
+	padding: 0 4px 15px;
+	background: #2b2d34;
+	z-index: 10;
+}
+
+.navList .dCenDownList .dCList {
+	width: 102px;
+	border-bottom: 1px solid #383a45;
+}
+
+.dCenDownList .dCList a {
+	display: block;
+	position: relative;
+	padding-left: 24px;
+	width: 78px;
+	height: 42px;
+	line-height: 42px;
+	color: #9b9b9c;
+} 
+
+#header .loginWrap {
+	float: right;
+}
+
+.loginWrap a {
+	position: relative;
+}
+
+.loginWrap .search {
+	float: left;
+	width: 20px;
+	height: 64px;
+}
+
+.loginWrap .ico-search,
+.loginWrap .ico-alert {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+
+.loginWrap .ico-search {
+	top: 22px;
+	background: url("../img/index.png") -125px 2px no-repeat;
+}
+
+.loginWrap .ico-alert {
+	top: 24px;
+	background: url("../img/index.png") -68px 1px no-repeat;
+}
+
+.loginWrap .alert {
+	float: left;
+	width: 20px;
+	height: 64px;
+	padding: 0 10px 0 22px;
+}
+
+.loginWrap .alert:hover .ico-alert {
+	background: url("../img/index.png") -95px 1px no-repeat;
+}
+
+.loginWrap .login {
+	float: right;
+	padding-right: 13px;
+	height: 64px;
+	line-height: 66px;
+	font-size: 14px;
+}
+
+.loginWrap .login:hover {
+	color: #fff;
+	transition: 0.5s;
+}
+
+/* Header End */
+
+
+/* Footer */
+
+#footer {
+	padding-top: 33px;
+	height: 167px;
+	background: #373942;
+	color: #666;
+}
+
+#footer .copy {
+	position: relative;
+	padding-left: 18px;
+	height: 12px;
+	line-height: 10px;
+}
+
+#footer .copy .icoMail {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 14px;
+	height: 11px;
+	background: url("../img/index.png") -310px -1px no-repeat;
+}
+
+#footer .copy a {
+	color: #666;
+}
+
+#footer .copy a:hover {
+	text-decoration: underline;
+}
+
+#footer .rel-links {
+	margin-top: 18px;
+	padding-top: 16px;
+	border-top: 1px solid #222530;
+}
+
+#footer .rel-links a {
+	display: block;
+	float: left;
+	height: 12px;
+	margin: 0 40px 16px 0;
+	white-space: nowrap;
+	font-size: 12px;
+	color: #666;
+}
+
+/* Footer End */
