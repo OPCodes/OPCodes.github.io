@@ -57,7 +57,7 @@ var projects = [
 		endTime:"2016.10.30",
 		projectExplain:"本项目仿百度浏览器主页，利用JQuery以及CSS3中的transform和animation实现了动画，以及解决了每一块切换的效果，关键在于鼠标滚轮滚动的过程中如何定位当前处于哪一屏，类似于全屏切换效果。其次是如何让鼠标滚轮和键盘以及向下跳转箭头同步，以及动画是否完成的检测等问题。",
 		projectLabel:["html","css3","css","js","JQuery"],
-		projectThumbnail:"images/icon/baidu.gif"
+		projectThumbnail:"images/icon/jd-text.png"
 	},
 	{
 		projectName:"仿淘宝公众平台",
@@ -66,7 +66,7 @@ var projects = [
 		endTime:"2016.10.30",
 		projectExplain:"本项目仿百度浏览器主页，利用JQuery以及CSS3中的transform和animation实现了动画，以及解决了每一块切换的效果，关键在于鼠标滚轮滚动的过程中如何定位当前处于哪一屏，类似于全屏切换效果。其次是如何让鼠标滚轮和键盘以及向下跳转箭头同步，以及动画是否完成的检测等问题。",
 		projectLabel:["html","css3","css","js","JQuery"],
-		projectThumbnail:"images/icon/baidu.gif"
+		projectThumbnail:"images/icon/taobao-open.png"
 	},
 	{
 		projectName:"仿网易云音乐",
@@ -75,7 +75,7 @@ var projects = [
 		endTime:"2016.10.30",
 		projectExplain:"本项目仿百度浏览器主页，利用JQuery以及CSS3中的transform和animation实现了动画，以及解决了每一块切换的效果，关键在于鼠标滚轮滚动的过程中如何定位当前处于哪一屏，类似于全屏切换效果。其次是如何让鼠标滚轮和键盘以及向下跳转箭头同步，以及动画是否完成的检测等问题。",
 		projectLabel:["html","css3","css","js","JQuery"],
-		projectThumbnail:"images/icon/baidu.gif"
+		projectThumbnail:"images/icon/wy-music.png"
 	},
 	{
 		projectName:"仿uehtml响应式布局",
@@ -84,6 +84,6 @@ var projects = [
 		endTime:"2016.10.30",
 		projectExplain:"本项目仿百度浏览器主页，利用JQuery以及CSS3中的transform和animation实现了动画，以及解决了每一块切换的效果，关键在于鼠标滚轮滚动的过程中如何定位当前处于哪一屏，类似于全屏切换效果。其次是如何让鼠标滚轮和键盘以及向下跳转箭头同步，以及动画是否完成的检测等问题。",
 		projectLabel:["html","css3","css","js","JQuery"],
-		projectThumbnail:"images/icon/baidu.gif"
+		projectThumbnail:"images/icon/ue-html.png"
 	}
 ]
