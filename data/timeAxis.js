@@ -39,7 +39,7 @@ var timeAxisArr = [
 		    startTime:"2016.11.09",
 			endTime:"2018.02.24",
 			companyNam:"一起作业网",
-			companyLogo:'images/icon/17zuoye.jpg',
+			companyLogo:'images/icon/17zy.jpg',
 			companyWebsite:"http://www.17zuoye.com",
 			jobContent:"内容包括：从WEB前端开发零基础到、移动端页面的开发、再到原生JAVASCRIPT、Ajax等内容，以上技术比较熟练，还学习了一些类库，如JQuery，还学习到了版本控制工具git和svn、了解到了一些类库和框架如Vue.js、react.js、Node.js等",
 		}
